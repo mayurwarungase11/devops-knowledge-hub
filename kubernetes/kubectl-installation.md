@@ -36,12 +36,12 @@ kubectl version --client
 # Create Amazon EKS cluster using eksctl
 
 ```bash
-eksctl create cluster --name eks-oncdecb31 --region ap-south-1 --version 1.32 --nodegroup-name linux-nodes --node-type m7i-flex.large --nodes 2
+eksctl create cluster --name RedHat11 --region ap-south-1 --version 1.32 --nodegroup-name linux-nodes --node-type m7i-flex.large --nodes 2
 ```
 # Log In Into EKS cluster
 
 ```bash
-aws eks update-kubeconfig --name eks-oncdecb31
+aws eks update-kubeconfig --name RedHat11
 ```
 
 # Delete EKS Cluster
