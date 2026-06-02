@@ -1,15 +1,17 @@
 # Git Installation on Ubuntu
 
-## Install Git
+# Update package
 
 ```bash
-# Update package index
 sudo apt update -y
+```
 
 # Install Git
+```
 sudo apt install git-all -y
-
+```
 # Verify Installation
+```
 git --version
 ```
 
