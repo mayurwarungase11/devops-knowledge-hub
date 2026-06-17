@@ -1,114 +1,117 @@
-# 🚀 DevOps Installation Guide
+# 🚀 DevOps Knowledge Hub
 
-Acurated collection of installation and setup guides for commonly used DevOps tools.
+A comprehensive DevOps knowledge repository designed to help engineers learn, implement, troubleshoot, and master modern DevOps practices.
 
-The goal of this repository is to provide a quick and reliable reference for setting up DevOps environments on Ubuntu and AWS EC2 instances.
-
----
-
-## 📂 Repository Structure
-
-### ☁️ AWS
-
-| Tool    | Guide          |
-| ------- | -------------- |
-| AWS CLI | aws/aws-cli.md |
+This repository covers everything from Linux fundamentals and cloud computing to Kubernetes, CI/CD pipelines, monitoring, security, troubleshooting, architecture design, and real-world projects.
 
 ---
 
-### 🏗️ Infrastructure as Code
+## 🎯 Objective
 
-| Tool      | Guide                  |
-| --------- | ---------------------- |
-| Terraform | terraform/terraform.md |
+The goal of this repository is to provide a structured and practical learning path for aspiring and experienced DevOps Engineers.
 
----
+Instead of focusing only on installation steps, this repository emphasizes:
 
-### 🐳 Containerization
-
-| Tool   | Guide                         |
-| ------ | ----------------------------- |
-| Docker | docker/docker-installation.md |
-
----
-
-### ☸️ Kubernetes Ecosystem
-
-| Tool     | Guide                               |
-| -------- | ----------------------------------- |
-| kubectl  | kubernetes/kubectl-installation.md  and eksctl-installation |
-| Helm     | kubernetes/helm-installation.md     |
-| Minikube | kubernetes/minikube-installation.md |
-   
+* Core concepts
+* Real-world implementations
+* Troubleshooting techniques
+* Production best practices
+* Architecture design
+* Hands-on projects
 
 ---
 
-### 🔐 Security Tools
+## 📚 Repository Structure
 
-| Tool      | Guide                              |
-| --------- | ---------------------------------- |
-| Trivy     | security/trivy-installation.md     |
-| SonarQube | security/sonarqube-installation.md |
-
-
----
-
-### 🔄 CI/CD
-
-| Tool    | Guide                        |
-| ------- | ---------------------------- |
-| Jenkins | cicd/jenkins-installation.md |
-
----
-
-### 📝 Version Control
-
-| Tool | Guide                   |
-| ---- | ----------------------- |
-| Git  | git/git-installation.md |
+```text
+devops-knowledge-hub/
+│
+├── linux/
+├── git/
+├── docker/
+├── kubernetes/
+├── aws/
+├── terraform/
+├── cicd/
+├── security/
+├── monitoring/
+├── troubleshooting/
+├── integrations/
+├── projects/
+├── architecture/
+└── interview-prep/
+```
 
 ---
 
-## 🎯 Purpose
+## 🐧 Linux
 
-This repository helps me:
+Linux fundamentals, permissions, networking, package management, storage management, and troubleshooting.
 
-* Set up fresh EC2 instances quickly
-* Recreate DevOps environments consistently
-* Maintain verified installation procedures
-* Store troubleshooting knowledge
-* Build a personal DevOps knowledge base
+## 🔀 Git
+
+Version control concepts, branching strategies, merge workflows, and Git best practices.
+
+## 🐳 Docker
+
+Docker installation, Dockerfiles, networking, volumes, container lifecycle, and troubleshooting.
+
+## ☸️ Kubernetes
+
+Kubernetes architecture, workloads, services, ingress, storage, security, Helm, and troubleshooting.
+
+## ☁️ AWS
+
+AWS services commonly used by DevOps Engineers including IAM, EC2, VPC, S3, Route 53, ECR, CloudFront, and EKS.
+
+## 🏗️ Terraform
+
+Infrastructure as Code concepts, modules, state management, and AWS provisioning.
+
+## ⚙️ CI/CD
+
+Jenkins, GitHub Actions, deployment automation, and pipeline best practices.
+
+## 🔒 Security
+
+Trivy, SonarQube, image scanning, code quality analysis, and security practices.
+
+## 📊 Monitoring
+
+Prometheus, Grafana, exporters, alerting, and observability concepts.
+
+## 🛠️ Troubleshooting
+
+Production-focused troubleshooting guides for Linux, Docker, Kubernetes, Jenkins, Terraform, and AWS.
+
+## 🔗 Integrations
+
+Real-world integrations between DevOps tools and platforms.
+
+## 📂 Projects
+
+Hands-on DevOps projects and deployment case studies.
+
+## 🏛️ Architecture
+
+Cloud, Kubernetes, CI/CD, and microservices architecture guides with diagrams.
+
+## 🎤 Interview Preparation
+
+Frequently asked DevOps interview questions and practical scenarios.
 
 ---
 
-## ✅ Tested Environment
+## 📈 Learning Philosophy
 
-* Ubuntu 24.04 LTS
-* AWS EC2
-* Linux CLI Environment
+Learn → Build → Troubleshoot → Automate → Scale
 
 ---
 
-## 📌 Future Additions
+## 🤝 Contributions
 
-### Monitoring
-
-* Prometheus
-* Grafana
-
-### Configuration Management
-
-* Ansible
-
-### GitOps
-
-* ArgoCD
-
-### Artifact Management
-
-* Nexus
+Contributions, suggestions, and improvements are always welcome.
 
 ---
 
-
-
+⭐ If this repository helps you, consider giving it a star.
