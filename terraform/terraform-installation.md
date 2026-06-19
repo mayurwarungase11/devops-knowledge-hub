@@ -1,41 +1,45 @@
 # Terraform Installation
 
-# Update packages
+## Update Packages
 
 ```bash
-sudo apt-get update
-```
-# Install required tools
-```bash
-sudo apt-get install -y gnupg software-properties-common curl
+sudo apt update
 ```
 
-# Add HashiCorp GPG key
+## Install Required Dependencies
 
 ```bash
-curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-
+sudo apt install -y gnupg wget
 ```
 
-# Add the HashiCorp repo
+## Add HashiCorp GPG Key
 
 ```bash
-sudo apt-add-repository "deb https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+wget -O- https://apt.releases.hashicorp.com/gpg | \
+gpg --dearmor | \
+sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
 ```
 
-# Update again
+## Add HashiCorp Repository
 
 ```bash
-sudo apt-get update
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
+sudo tee /etc/apt/sources.list.d/hashicorp.list
 ```
 
-# Install Terraform
+## Update Package Index
 
 ```bash
-sudo apt-get install terraform
+sudo apt update
 ```
 
-## Verify
+## Install Terraform
+
+```bash
+sudo apt install terraform -y
+```
+
+## Verify Installation
 
 ```bash
 terraform version
