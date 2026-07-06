@@ -290,6 +290,144 @@ This is why `ENTRYPOINT` and `CMD` are often used together—`ENTRYPOINT` define
 
 
 
+---
+
+## Q13. What is the difference between `COPY` and `ADD`?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+Both `COPY` and `ADD` are used to bring files into a Docker Image, but `COPY` is the simpler of the two—it simply copies files and directories from your local machine into the image.
+
+`ADD` does everything `COPY` does, but with a few additional features. It can automatically extract compressed archives such as `.tar` files and can also retrieve files from remote URLs, although this feature is rarely used in modern Dockerfiles.
+
+Because of these extra capabilities, `ADD` may perform actions you don't expect, such as automatically extracting an archive when you only intended to copy it. For this reason, the recommended best practice is to use `COPY` by default and use `ADD` only when you specifically need its additional features.
+
+### 📊 Comparison Table
+
+| Instruction | Purpose | Extra Features | Best Use Case |
+|-------------|---------|----------------|---------------|
+| **COPY** | Copies files and directories into the image | ❌ No | Recommended for most file-copy operations |
+| **ADD** | Copies files and directories into the image | ✅ Extracts compressed archives and supports remote URLs | Use only when you need these additional features |
+
+### 💻 Real Dockerfile Example
+
+```dockerfile
+# Copies the application JAR into the image
+COPY app.jar /app/
+
+# Automatically extracts the archive into /app/
+ADD application.tar.gz /app/
+```
+
+**Explanation:**
+
+- `COPY` simply copies `app.jar` into the `/app` directory.
+- `ADD` automatically extracts `application.tar.gz` while adding it to the image.
+
+### 💡 Quick Note
+
+> **COPY** = Simple and predictable file copy.  
+> **ADD** = COPY with additional features like archive extraction and remote URL support.
+
+### 🧠 Mental Model
+
+Think of it this way:
+
+- **COPY** → 📄 **Copy-Paste**
+- **ADD** → ✨ **Copy-Paste with Superpowers**
+
+Most of the time, you only need a normal copy-paste operation, so **COPY** is the preferred choice. Use **ADD** only when you intentionally need its extra capabilities.
+
+### ✅ Best Practice
+
+> Use **COPY** by default because it's simpler, more predictable, and follows Docker best practices. Use **ADD** only when you specifically need automatic archive extraction or one of its additional features.
+
+---
+
+
+## Q14. What is the difference between `ENV` and `ARG`?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+Both `ENV` and `ARG` are used to define variables in a Dockerfile, but they are available at different stages.
+
+`ARG` is used only during the image build process and is available only while the image is being built. Once the image is created, `ARG` values are no longer accessible inside the running container.
+
+`ENV`, on the other hand, defines environment variables that become part of the Docker Image and remain available even after the container starts. This makes `ENV` suitable for runtime configuration, while `ARG` is typically used for build-time values such as version numbers or build options.
+
+### 📊 Comparison Table
+
+| Instruction | Available During | Available in Running Container | Common Use |
+|-------------|------------------|--------------------------------|------------|
+| **ARG** | Build Time | ❌ No | Version numbers, build-time configuration |
+| **ENV** | Build Time + Runtime | ✅ Yes | Environment variables, application configuration |
+
+### 💻 Real Dockerfile Example
+
+```dockerfile
+FROM ubuntu:22.04
+
+ARG APP_VERSION=1.0
+ENV APP_NAME=Student-App
+
+RUN echo "Build Time - APP_VERSION: $APP_VERSION"
+RUN echo "Build Time - APP_NAME: $APP_NAME"
+```
+
+**Explanation:**
+
+During the image build process, both `ARG` and `ENV` variables are available, so both values can be used inside `RUN` instructions.
+
+After building the image and starting a container:
+
+```bash
+docker run --rm <image-name> env | grep APP_NAME
+```
+
+✅ Output:
+
+```text
+APP_NAME=Student-App
+```
+
+But:
+
+```bash
+docker run --rm <image-name> env | grep APP_VERSION
+```
+
+❌ No output
+
+This is because `ARG` exists only during the image build process, whereas `ENV` becomes part of the Docker Image and remains available inside the running container.
+
+### 💡 Quick Note
+
+> **ARG** → Build Time 🏗️  
+> **ENV** → Build Time + Runtime 🌍
+
+### 🧠 Mental Model
+
+Think of it like building a house:
+
+- **ARG** → 👷 **Temporary Visitor** (needed only while the house is being built)
+- **ENV** → 🏠 **Permanent Resident** (remains in the house after construction is complete)
+
+Once construction is finished, the builder leaves—but the residents continue living in the house.
+
+Similarly, `ARG` is available only during the image build process, whereas `ENV` remains available inside the running container.
+
+### ✅ Best Practice
+
+> Use **ARG** for values required only while building the image, such as version numbers, build options, or selecting a base image version. Use **ENV** for configuration that the application needs while the container is running, such as environment variables, application settings, database URLs, or service endpoints.
+
+---
+
 
 
 
