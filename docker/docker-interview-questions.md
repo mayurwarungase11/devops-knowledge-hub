@@ -429,7 +429,18 @@ Similarly, `ARG` is available only during the image build process, whereas `ENV`
 ---
 
 
+## Q15. What is a `.dockerignore` file?
 
+> **Difficulty:** Beginner  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+A `.dockerignore` file works much like a `.gitignore` file—it tells Docker which files and folders to ignore from the build context when building an image. Without it, Docker sends the entire build context to the Docker daemon, including unnecessary files such as `node_modules`, log files, or local environment files.
+
+By listing these files in a `.dockerignore` file, you reduce the build context size, speed up image builds, avoid accidentally including sensitive files, and keep the final image cleaner and more efficient.
+
+---
 
 
 
