@@ -184,7 +184,7 @@ It also hosts a lot of official images for popular software like Nginx, MySQL, o
 > **Difficulty:** Beginner  
 > **Estimated Answer Time:** 45–60 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 A Dockerfile consists of a set of instructions that Docker follows to build an image. Each instruction serves a specific purpose in configuring the application and its runtime environment.
 
@@ -210,7 +210,7 @@ Some of the most commonly used Dockerfile instructions are:
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 45–60 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 These three Dockerfile instructions are often confused, but they serve different purposes.
 
