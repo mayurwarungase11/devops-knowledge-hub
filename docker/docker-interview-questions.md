@@ -297,7 +297,7 @@ This is why `ENTRYPOINT` and `CMD` are often used together—`ENTRYPOINT` define
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 30–45 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Both `COPY` and `ADD` are used to bring files into a Docker Image, but `COPY` is the simpler of the two—it simply copies files and directories from your local machine into the image.
 
@@ -353,7 +353,7 @@ Most of the time, you only need a normal copy-paste operation, so **COPY** is th
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 30–45 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Both `ENV` and `ARG` are used to define variables in a Dockerfile, but they are available at different stages.
 
@@ -434,7 +434,7 @@ Similarly, `ARG` is available only during the image build process, whereas `ENV`
 > **Difficulty:** Beginner  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 A `.dockerignore` file works much like a `.gitignore` file—it tells Docker which files and folders to ignore from the build context when building an image. Without it, Docker sends the entire build context to the Docker daemon, including unnecessary files such as `node_modules`, log files, or local environment files.
 
