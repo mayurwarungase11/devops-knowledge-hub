@@ -435,7 +435,25 @@ The Host Network is a Docker network mode where the container uses the host mach
 
 We usually use the Host Network for applications that need the fastest possible network performance or direct access to the host's network.
 
+
 ---
+
+## Q22. What is the None Network and when would you use it?
+
+> **AKA:** What happens if a container has no network?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+The None Network is a Docker network mode where the container runs without any network connectivity. It doesn't have access to the internet, the host machine, or other containers.
+
+We use the None Network when an application doesn't require network communication or when we want complete network isolation for security, testing, or specialized workloads.
+
+---
+
+
 
 
 
