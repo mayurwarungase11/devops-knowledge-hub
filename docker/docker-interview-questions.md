@@ -317,7 +317,23 @@ A `.dockerignore` file works much like a `.gitignore` file—it tells Docker whi
 
 By listing these files in a `.dockerignore` file, you reduce the build context size, speed up image builds, avoid accidentally including sensitive files, and keep the final image cleaner and more efficient.
 
+
 ---
+
+## Q16. What are Docker Volumes and why do we use them?
+
+> **Difficulty:** Beginner  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+Docker Volumes are Docker-managed storage used to persist data outside a container's filesystem. We use them because, by default, any data stored inside a container is lost when the container is removed. Volumes keep the data separate from the container, allowing it to survive container restarts, deletion, or recreation.
+
+They're commonly used to store persistent data such as databases, application files, and log files. Docker Volumes can also be shared between multiple containers when required.
+
+---
+
+
 
 
 
