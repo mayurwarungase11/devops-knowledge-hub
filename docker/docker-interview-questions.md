@@ -338,7 +338,37 @@ Docker Volumes are Docker-managed storage used to persist data outside a contain
 
 They're commonly used to store persistent data such as databases, application files, and log files. Docker Volumes can also be shared between multiple containers when required.
 
+
 ---
+
+## Q17. What is the difference between a Bind Mount and a Docker Volume?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+Both Bind Mounts and Docker Volumes are used to persist data outside a container, but they differ in how that data is managed.
+
+A **Bind Mount** maps a specific directory or file from the host machine directly into the container. Since it depends on the host's file system, it's commonly used during development when you want changes made on the host to be reflected immediately inside the container.
+
+A **Docker Volume**, on the other hand, is managed by Docker itself. It's independent of the host's directory structure, making it more portable, secure, and the preferred choice for production environments.
+
+*(The section below is for deeper understanding, not for reciting in an interview.)*
+
+### 📊 Comparison Table
+
+| Feature | **Bind Mount** | **Docker Volume** |
+|---------|----------------|-------------------|
+| Storage Location | Specific host directory | Docker-managed storage |
+| Managed By | Host operating system | Docker |
+| Best Use Case | Development | Production |
+| Portability | Lower | Higher |
+| Performance | Good | Optimized for Docker workloads |
+
+---
+
+
 
 
 
