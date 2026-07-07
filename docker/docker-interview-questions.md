@@ -420,7 +420,24 @@ We use Docker Networking to allow containers to communicate with each other, acc
 
 Docker containers communicate by connecting to the same Docker network. In most real-world applications, this is a user-defined Bridge Network, where Docker provides built-in DNS-based name resolution. This allows containers to communicate using their container names instead of IP addresses, making communication simpler and more reliable. For example, a frontend container can communicate with a backend container using its container name without worrying about changing IP addresses
 
+
+
 ---
+
+## Q21. What is the Host Network and when would you use it?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+The Host Network is a Docker network mode where the container uses the host machine's network directly instead of having its own separate network. Because of this, the container can communicate faster and doesn't need its own network isolation.
+
+We usually use the Host Network for applications that need the fastest possible network performance or direct access to the host's network.
+
+---
+
+
 
 
 
