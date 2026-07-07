@@ -395,7 +395,23 @@ In general, **Named Volumes** are preferred because they're easier to manage and
 | Management | Easy | Harder |
 | Common Use | Production, persistent storage | Temporary or short-lived data |
 
+
 ---
+
+## Q19. What is Docker Networking and why do we use it?
+
+> **Difficulty:** Beginner  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+Docker Networking is a feature that enables communication between Docker containers, the host machine, and external networks. By default, containers run in isolation, so they cannot communicate unless they are connected through a Docker network.
+
+We use Docker Networking to allow containers to communicate with each other, access external services such as databases or APIs, and expose applications so users can access them. Docker provides different network drivers, such as Bridge, Host, None, and Overlay, to support different networking requirements.
+
+---
+
+
 
 
 
