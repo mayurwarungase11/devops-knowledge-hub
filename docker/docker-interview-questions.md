@@ -203,90 +203,34 @@ Some of the most commonly used Dockerfile instructions are:
 
 > 💡 **Quick Note:** A Dockerfile is executed from top to bottom, so the order of instructions matters during the image build process.
 
+
 ---
 
 ## Q12. What is the difference between `RUN`, `CMD`, and `ENTRYPOINT`?
 
 > **Difficulty:** Intermediate  
-> **Estimated Answer Time:** 45–60 seconds
+> **Estimated Answer Time:** 30–45 seconds
 
-**🎤 Interview Answer**
+### 🎤 Interview Answer
 
 These three Dockerfile instructions are often confused, but they serve different purposes.
 
-- **RUN** is used only during the image build process. It executes commands such as installing packages or dependencies and saves those changes in the Docker Image.
-- **CMD** and **ENTRYPOINT**, on the other hand, define what runs when the container starts.
-- **CMD** provides the default command or arguments and can be easily overridden by specifying a different command when starting the container.
-- **ENTRYPOINT** defines the main executable of the container. It is intended to always run and is harder to override. In practice, **ENTRYPOINT** and **CMD** are often used together, where **ENTRYPOINT** specifies the main application and **CMD** provides its default arguments.
+- **RUN** is used only during the image build process. It executes commands such as installing packages or dependencies, and the changes become part of the Docker Image.
+- **CMD** specifies the default command or arguments that run when the container starts. It's easily overridden—if you pass a different command while running the container, it simply replaces whatever `CMD` had defined.
+- **ENTRYPOINT** defines the main executable of the container and ensures the intended application always starts when the container runs. It's not easily overridden, which makes it ideal for defining the primary application.
+
+In practice, `ENTRYPOINT` and `CMD` are often used together, where `ENTRYPOINT` defines the main executable and `CMD` provides its default arguments, allowing users to override the default arguments without changing the main executable.
+
+*(The section below is for deeper understanding, not for reciting in an interview.)*
 
 ### 📊 Comparison Table
 
-| Instruction | Purpose | Executes | Can Be Overridden? |
-|-------------|---------|----------|--------------------|
-| **RUN** | Executes commands while building the image | During `docker build` | ❌ No |
-| **CMD** | Specifies the default command or arguments | When the container starts | ✅ Yes |
-| **ENTRYPOINT** | Defines the main executable of the container | When the container starts | ⚠️ Not easily (requires `--entrypoint`) |
+| Instruction | Purpose | Executes | Overridable? |
+|-------------|---------|----------|--------------|
+| **RUN** | Executes commands while building the image | During `docker build` | N/A |
+| **CMD** | Specifies the default command or arguments | When the container starts | ✅ Easily |
+| **ENTRYPOINT** | Defines the main executable of the container | When the container starts | ⚠️ Not easily |
 
-### 💻 Real Dockerfile Example
-
-dockerfile
-FROM ubuntu:22.04
-
-RUN apt-get update && apt-get install -y nginx
-
-ENTRYPOINT ["nginx"]
-
-CMD ["-g", "daemon off;"]
-
-
-**Explanation:**
-
-- `RUN` installs **Nginx** while the Docker Image is being built.
-- `ENTRYPOINT` ensures that **Nginx** is always the main application that starts.
-- `CMD` provides the default argument (`daemon off;`) to the `ENTRYPOINT` command. If needed, these default arguments can be overridden when running the container.
-
-> 💡 **Quick Note:**
->
-> **RUN** → Build the Image 🏗️  
-> **CMD** → Default command or arguments ⚙️  
-> **ENTRYPOINT** → Main application 🚀
-
-
-🧠 **Mental Model**
-
-Think of it like driving a car:
-
-- **ENTRYPOINT** → The **driver** 🚗 (the main application that always runs)
-- **CMD** → The **destination** 📍 (the default command or arguments)
-
-Example:
-
-dockerfile
-ENTRYPOINT ["python3"]
-CMD ["app.py"]
-
-
-Docker executes:
-
-
-python3 app.py
-
-
-If someone runs:
-
-
-docker run myimage test.py
-
-
-Docker executes:
-
-
-python3 test.py
-
-
-Here, the **ENTRYPOINT (`python3`)** stays the same, while the **CMD (`app.py`)** is replaced with `test.py`.
-
-This is why `ENTRYPOINT` and `CMD` are often used together—`ENTRYPOINT` defines the main application, and `CMD` provides its default arguments.
 
 
 
