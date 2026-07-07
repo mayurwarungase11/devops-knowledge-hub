@@ -451,7 +451,25 @@ The None Network is a Docker network mode where the container runs without any n
 
 We use the None Network when an application doesn't require network communication or when we want complete network isolation for security, testing, or specialized workloads.
 
+
 ---
+
+## Q23. What is the Overlay Network and when would you use it?
+
+> **AKA:** How do containers running on different machines communicate?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+The Overlay Network is a Docker network mode that allows containers running on different host machines to communicate as if they were on the same network.
+
+We use the Overlay Network in multi-host environments, such as Docker Swarm or Kubernetes, where applications are distributed across multiple servers but still need to communicate with each other.
+
+---
+
+
 
 
 
