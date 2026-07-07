@@ -320,6 +320,13 @@ By listing these files in a `.dockerignore` file, you reduce the build context s
 
 ---
 
+# Section 3: Docker Storage
+
+Learn how Docker stores persistent data using Volumes and Bind Mounts. This section focuses on one of the most important Docker interview topics—data persistence and storage management.
+
+---
+
+
 ## Q16. What are Docker Volumes and why do we use them?
 
 > **Difficulty:** Beginner  
