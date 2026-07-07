@@ -259,93 +259,49 @@ Both `COPY` and `ADD` are used to copy files and directories into a Docker Image
 
 
 
-
-
-
-
-
-
-
 ---
-
 
 ## Q14. What is the difference between `ENV` and `ARG`?
 
 > **Difficulty:** Intermediate  
-> **Estimated Answer Time:** 30–45 seconds
+> **Estimated Answer Time:** 20–30 seconds
 
-**🎤 Interview Answer**
+### 🎤 Interview Answer
 
-Both `ENV` and `ARG` are used to define variables in a Dockerfile, but they are available at different stages.
+Both `ENV` and `ARG` are used to define variables in a Dockerfile, but they differ in when those variables are available.
 
-`ARG` is used only during the image build process and is available only while the image is being built. Once the image is created, `ARG` values are no longer accessible inside the running container.
+`ARG` is available only during the image build process and is typically used for build-time values such as version numbers or build options. Once the image is built, `ARG` is no longer available inside the running container.
 
-`ENV`, on the other hand, defines environment variables that become part of the Docker Image and remain available even after the container starts. This makes `ENV` suitable for runtime configuration, while `ARG` is typically used for build-time values such as version numbers or build options.
+`ENV`, on the other hand, becomes part of the Docker Image and remains available even after the container starts. It's commonly used for runtime configuration, such as application settings or environment variables.
+
+*(The section below is for deeper understanding, not for reciting in an interview.)*
 
 ### 📊 Comparison Table
 
 | Instruction | Available During | Available in Running Container | Common Use |
 |-------------|------------------|--------------------------------|------------|
-| **ARG** | Build Time | ❌ No | Version numbers, build-time configuration |
-| **ENV** | Build Time + Runtime | ✅ Yes | Environment variables, application configuration |
+| **ARG** | Build Time | ❌ No | Version numbers, build options |
+| **ENV** | Build Time + Runtime | ✅ Yes | Application configuration, environment variables |
 
-### 💻 Real Dockerfile Example
 
-```dockerfile
-FROM ubuntu:22.04
 
-ARG APP_VERSION=1.0
-ENV APP_NAME=Student-App
 
-RUN echo "Build Time - APP_VERSION: $APP_VERSION"
-RUN echo "Build Time - APP_NAME: $APP_NAME"
-```
 
-**Explanation:**
 
-During the image build process, both `ARG` and `ENV` variables are available, so both values can be used inside `RUN` instructions.
 
-After building the image and starting a container:
 
-```bash
-docker run --rm <image-name> env | grep APP_NAME
-```
 
-✅ Output:
 
-```text
-APP_NAME=Student-App
-```
 
-But:
 
-```bash
-docker run --rm <image-name> env | grep APP_VERSION
-```
 
-❌ No output
 
-This is because `ARG` exists only during the image build process, whereas `ENV` becomes part of the Docker Image and remains available inside the running container.
 
-### 💡 Quick Note
 
-> **ARG** → Build Time 🏗️  
-> **ENV** → Build Time + Runtime 🌍
 
-### 🧠 Mental Model
 
-Think of it like building a house:
 
-- **ARG** → 👷 **Temporary Visitor** (needed only while the house is being built)
-- **ENV** → 🏠 **Permanent Resident** (remains in the house after construction is complete)
 
-Once construction is finished, the builder leaves—but the residents continue living in the house.
-
-Similarly, `ARG` is available only during the image build process, whereas `ENV` remains available inside the running container.
-
-### ✅ Best Practice
-
-> Use **ARG** for values required only while building the image, such as version numbers, build options, or selecting a base image version. Use **ENV** for configuration that the application needs while the container is running, such as environment variables, application settings, database URLs, or service endpoints.
 
 ---
 
