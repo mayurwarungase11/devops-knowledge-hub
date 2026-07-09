@@ -600,6 +600,34 @@ We use Multi-stage Builds to create smaller, cleaner, and more secure Docker Ima
 For example, in a Java application, the build stage contains the JDK, Maven, and source code to compile the application. The final image only needs the JAR file and a JRE to run it. Similarly, for a Go application, the compiler is required only during the build, while the final image contains just the compiled binary.
 
 ---
+### 💻 Example: Multi-stage Build
+
+dockerfile
+ Stage 1: Build the application
+FROM golang:1.21 AS builder
+
+WORKDIR /app
+
+COPY . .
+
+RUN go build -o myapp
+
+ Stage 2: Create the final lightweight image
+FROM alpine:latest
+
+COPY --from=builder /app/myapp /myapp
+
+CMD ["/myapp"]
+
+
+**Explanation:**
+
+- **Stage 1 (`builder`)** contains everything needed to build the application, such as the Go compiler, source code, and build dependencies.
+- After the application is compiled, only the **`myapp` binary** is copied to the second stage.
+- **Stage 2** uses a lightweight Alpine Linux image and contains only the compiled application, making the final Docker Image much smaller, cleaner, and more secure.
+
+---
+
 
 
 
