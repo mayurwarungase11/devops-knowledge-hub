@@ -512,7 +512,25 @@ Docker Compose is a tool that lets us define, run, and manage multiple Docker co
 
 We use Docker Compose because modern applications usually consist of multiple services, such as a frontend, backend, and database. Instead of managing each container separately, Docker Compose allows us to configure the entire application in one file and start or stop all the services with a single command. It's primarily used for local development and testing.
 
+
 ---
+
+## Q26. What is Docker Swarm and why do we use it?
+
+> **AKA:** If Docker Compose already manages multiple containers, why does Docker Swarm exist?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+Docker Swarm is Docker's built-in tool for managing containers across multiple machines as a single cluster.
+
+We use Docker Swarm when applications need to run on multiple servers with features such as high availability, load balancing, scaling, and automatic failover. It helps us manage containerized applications more efficiently than running containers on a single machine.
+
+---
+
+
 
 
 
