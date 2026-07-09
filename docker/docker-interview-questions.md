@@ -701,7 +701,28 @@ Finally, I use specific image versions instead of the `latest` tag and remove un
 
 Following these practices helps build Docker Images that are smaller, more secure, and easier to maintain.
 
+
+
 ---
+
+## Q32. How do you secure a Docker container?
+
+> **AKA:** What security practices do you follow while building a Docker Image?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+To secure a Docker container, I follow a few important security practices. I use a trusted and updated base image, run containers as a non-root user, and keep the image as small as possible by removing unnecessary packages to reduce the attack surface.
+
+I also never hardcode sensitive information such as passwords or API keys inside the Docker Image. Before deploying the image, I scan it for vulnerabilities using tools such as Trivy to identify and fix security issues.
+
+Following these practices helps build Docker containers that are more secure and production-ready.
+
+---
+
+
 
 
 
