@@ -626,7 +626,63 @@ CMD ["/myapp"]
 - After the application is compiled, only the **`myapp` binary** is copied to the second stage.
 - **Stage 2** uses a lightweight Alpine Linux image and contains only the compiled application, making the final Docker Image much smaller, cleaner, and more secure.
 
+
+
 ---
+
+## Q30. What are Docker Image Layers?
+
+> **AKA:** How are Docker Images built?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+Docker Images are built in layers, where each Dockerfile instruction such as `FROM`, `RUN`, `COPY`, or `ADD` creates a separate read-only layer. These layers are stacked together to form the final Docker Image.
+
+Docker stores and reuses these layers through caching. If a layer hasn't changed, Docker reuses it instead of rebuilding it, making image builds faster and reducing storage usage.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: Does the order of Dockerfile instructions matter?**
+
+**Answer:**
+
+Yes. Docker builds images layer by layer and caches each layer. If an earlier layer changes, Docker has to rebuild that layer and every layer after it.
+
+To take advantage of caching, place instructions that change less frequently—such as installing dependencies—before instructions that change more often, such as copying application source code. This allows Docker to reuse cached layers and significantly speeds up future builds.
+
+---
+
+### 💻 Example
+
+```dockerfile
+FROM node:18
+
+# Changes rarely
+COPY package.json .
+
+RUN npm install
+
+# Changes frequently
+COPY . .
+
+CMD ["node", "app.js"]
+```
+
+**Explanation:**
+
+- `FROM` creates the base layer.
+- `COPY package.json .` and `RUN npm install` are cached because dependencies usually don't change often.
+- `COPY . .` is placed later because application code changes more frequently.
+- If only the application code changes, Docker reuses the cached dependency layers and rebuilds only the remaining layers, making the build much faster.
+
+---
+
+
 
 
 
