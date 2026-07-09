@@ -528,7 +528,38 @@ Docker Swarm is Docker's built-in tool for managing containers across multiple m
 
 We use Docker Swarm when applications need to run on multiple servers with features such as high availability, load balancing, scaling, and automatic failover. It helps us manage containerized applications more efficiently than running containers on a single machine.
 
+
 ---
+
+## Q27. What is the difference between Docker Compose and Docker Swarm?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+Docker Compose and Docker Swarm are both used to manage multiple containers, but they are designed for different purposes.
+
+- **Docker Compose** is used to define, run, and manage multi-container applications on a **single machine**. It's primarily used for local development and testing.
+- **Docker Swarm** is used to manage containers across **multiple machines** as a cluster. It provides features such as high availability, load balancing, scaling, and automatic failover, making it suitable for production environments.
+
+The choice depends on where your application is running. If you're working on a single machine, use **Docker Compose**. If you need to manage containers across multiple servers, use **Docker Swarm**.
+
+*(The section below is for deeper understanding, not for reciting in an interview.)*
+
+### 📊 Comparison Table
+
+| Feature | **Docker Compose** | **Docker Swarm** |
+|---------|---------------------|------------------|
+| Best Used For | Local development & testing | Multi-server deployments |
+| Runs On | Single machine | Multiple machines (cluster) |
+| Scaling | Limited | Built-in |
+| High Availability | ❌ No | ✅ Yes |
+| Load Balancing | ❌ No | ✅ Yes |
+
+---
+
+
 
 
 
