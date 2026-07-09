@@ -495,6 +495,15 @@ The choice of Docker network depends on where your containers are running and ho
 
 ---
 
+# Section 5: Docker Compose
+
+Learn how to define, manage, and run multi-container applications using Docker Compose. This section covers one of the most frequently asked Docker topics in DevOps interviews.
+
+---
+
+
+
+
 
 
 
