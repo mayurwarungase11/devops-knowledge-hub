@@ -575,7 +575,33 @@ Learn how to build efficient, secure, and production-ready Docker Images. This s
 
 There are a few practical things we can do. We can start with a smaller base image, like Alpine Linux, instead of a full OS image. We can also use multi-stage builds so only the final, necessary files make it into the image instead of all the build tools. Beyond that, using a `.dockerignore` file keeps unrelated files out of the build context, and cleaning up unnecessary packages or temporary files during the build helps keep the image as small as possible.
 
+
+
 ---
+
+## Q29. What is a Multi-stage Build and why do we use it?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+A Multi-stage Build is a Docker build technique where we use multiple stages within a single Dockerfile. The first stage is used to build the application, while the final stage contains only the files needed to run it.
+
+We use Multi-stage Builds to create smaller, cleaner, and more secure Docker Images by excluding build tools, source code, and other unnecessary files from the final image.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: What kind of unnecessary files are removed from the final image?**
+
+**Answer:**
+For example, in a Java application, the build stage contains the JDK, Maven, and source code to compile the application. The final image only needs the JAR file and a JRE to run it. Similarly, for a Go application, the compiler is required only during the build, while the final image contains just the compiled binary.
+
+---
+
+
 
 
 
