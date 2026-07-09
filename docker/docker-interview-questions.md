@@ -562,7 +562,22 @@ The choice depends on where your application is running. If you're working on a 
 
 Learn how to build efficient, secure, and production-ready Docker Images. This section covers Docker optimization techniques and security best practices that are commonly discussed in DevOps interviews.
 
+
+
 ---
+
+## Q28. How can you reduce the size of a Docker Image?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+There are a few practical things we can do. We can start with a smaller base image, like Alpine Linux, instead of a full OS image. We can also use multi-stage builds so only the final, necessary files make it into the image instead of all the build tools. Beyond that, using a `.dockerignore` file keeps unrelated files out of the build context, and cleaning up unnecessary packages or temporary files during the build helps keep the image as small as possible.
+
+---
+
+
 
 
 
