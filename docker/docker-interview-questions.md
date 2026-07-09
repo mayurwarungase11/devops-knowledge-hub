@@ -680,7 +680,30 @@ CMD ["node", "app.js"]
 - `COPY . .` is placed later because application code changes more frequently.
 - If only the application code changes, Docker reuses the cached dependency layers and rebuilds only the remaining layers, making the build much faster.
 
+
+
 ---
+
+## Q31. What are Docker Best Practices?
+
+> **AKA:** What best practices do you follow while writing a Dockerfile?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+When writing a Dockerfile, I usually follow a few important best practices. I start with a lightweight base image, such as Alpine Linux, and use Multi-stage Builds to keep the final image small.
+
+I also use a `.dockerignore` file so unnecessary files aren't included in the image, and I avoid running containers as the root user to improve security.
+
+Finally, I use specific image versions instead of the `latest` tag and remove unnecessary packages or temporary files to keep the image clean.
+
+Following these practices helps build Docker Images that are smaller, more secure, and easier to maintain.
+
+---
+
+
 
 
 
