@@ -720,7 +720,40 @@ I also never hardcode sensitive information such as passwords or API keys inside
 
 Following these practices helps build Docker containers that are more secure and production-ready.
 
+
+
 ---
+
+## Q33. How do you handle secrets in Docker?
+
+> **AKA:** How do you securely manage passwords, API keys, and tokens in Docker?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+Sensitive information such as passwords, API keys, and access tokens should never be hardcoded into a Dockerfile or included in a Docker Image because anyone with access to the image can retrieve them.
+
+Instead, secrets should be provided at runtime. For simple use cases, environment variables can be used, while production environments should use dedicated secret management solutions such as Docker Secrets, AWS Secrets Manager, HashiCorp Vault, or Kubernetes Secrets.
+
+Following this approach helps keep sensitive information secure without exposing it inside the Docker Image.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: What's wrong with using environment variables for secrets?**
+
+**Answer:**
+
+Environment variables are convenient and commonly used during local development, but they are not the most secure option for production. Anyone with sufficient access to the host can view them through commands like `docker inspect`, and they may also be exposed through process information or application logs if not handled carefully.
+
+For production environments, it's better to use dedicated secret management solutions such as Docker Secrets, AWS Secrets Manager, HashiCorp Vault, or Kubernetes Secrets, which are designed to store and deliver sensitive information more securely.
+
+---
+
+
 
 
 
