@@ -501,6 +501,21 @@ Learn how to define, manage, and run multi-container applications using Docker C
 
 ---
 
+## Q25. What is Docker Compose and why do we use it?
+
+> **Difficulty:** Beginner  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+Docker Compose is a tool that lets us define, run, and manage multiple Docker containers using a single `docker-compose.yml` file instead of starting each container manually.
+
+We use Docker Compose because modern applications usually consist of multiple services, such as a frontend, backend, and database. Instead of managing each container separately, Docker Compose allows us to configure the entire application in one file and start or stop all the services with a single command. It's primarily used for local development and testing.
+
+---
+
+
+
 
 
 
