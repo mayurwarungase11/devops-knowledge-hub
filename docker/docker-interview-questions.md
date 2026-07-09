@@ -558,6 +558,13 @@ The choice depends on where your application is running. If you're working on a 
 | Load Balancing | ❌ No | ✅ Yes |
 
 ---
+# Section 6: Docker Optimization & Security
+
+Learn how to build efficient, secure, and production-ready Docker Images. This section covers Docker optimization techniques and security best practices that are commonly discussed in DevOps interviews.
+
+---
+
+
 
 
 
