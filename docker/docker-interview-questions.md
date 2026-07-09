@@ -467,7 +467,35 @@ The Overlay Network is a Docker network mode that allows containers running on d
 
 We use the Overlay Network in multi-host environments, such as Docker Swarm or Kubernetes, where applications are distributed across multiple servers but still need to communicate with each other.
 
+
 ---
+
+## Q24. What is the difference between Bridge, Host, and Overlay Networks?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+The choice of Docker network depends on where your containers are running and how they need to communicate.
+
+- Choose **Bridge Network** when multiple containers are running on the same host machine and need to communicate with each other.
+- Choose **Host Network** when an application requires direct access to the host's network or the fastest possible network communication.
+- Choose **Overlay Network** when containers are running on different host machines and need to communicate, such as in a Docker Swarm cluster.
+
+*(The section below is for deeper understanding, not for reciting in an interview.)*
+
+### 📊 Comparison Table
+
+| Network | Choose It When | Best For |
+|---------|----------------|----------|
+| **Bridge** | Containers run on the same host | Single-host applications |
+| **Host** | Maximum network performance is required | Performance-sensitive applications |
+| **Overlay** | Containers run on multiple hosts | Docker Swarm deployments |
+
+---
+
+
 
 
 
