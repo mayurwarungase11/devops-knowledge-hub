@@ -768,7 +768,71 @@ If a Docker container exits immediately after starting, I first check the contai
 If the issue still isn't clear, I inspect the container configuration using `docker inspect` and verify settings such as environment variables, port mappings, volume mounts, and the startup command. If needed, I run the container interactively to manually test the startup command and see exactly what fails.
 Based on that information, I identify and fix the root cause, which could be an application error, a missing dependency, an incorrect command, or a configuration issue.
 
+
+
 ---
+
+## Q35. A Docker container is not accessible from the browser. How would you troubleshoot it?
+
+> **AKA:** My Docker container is running, but I can't access the application. What would you check?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+If a Docker container is running but the application isn't accessible from the browser, I first verify that the container is running using `docker ps`. Then I check whether the required ports are mapped correctly between the host and the container.
+
+If the port mapping looks correct, I check the container logs using `docker logs` to see whether the application started successfully. If the issue still isn't clear, I enter the container using `docker exec` and test the application locally with `curl localhost:<application_port>` to verify whether it's actually listening on the expected port.
+
+Based on those results, I determine whether the issue is related to the application itself, the container configuration, port mapping, or external network settings such as a firewall or security group.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: Why do you run `curl localhost:<application_port>` from inside the container?**
+
+**Answer:**
+
+Running `curl` from inside the container helps isolate the problem.
+
+- If the application responds, the application is working, and the issue is likely related to port mapping, firewall rules, security groups, or other networking configuration.
+- If the application doesn't respond, the problem is inside the container itself, such as an application startup failure, incorrect listening port, or configuration issue.
+
+---
+
+### 💻 Troubleshooting Flow
+
+```text
+Application not accessible
+           │
+           ▼
+      docker ps
+           │
+           ▼
+   Check Port Mapping
+           │
+           ▼
+     docker logs
+           │
+           ▼
+docker exec -it <container> sh
+           │
+           ▼
+curl localhost:<application_port>
+           │
+      ┌────┴────┐
+      ▼         ▼
+ Responds   No Response
+      │         │
+Network     Application
+ Issue         Issue
+```
+
+---
+
+
 
 
 
