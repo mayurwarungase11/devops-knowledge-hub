@@ -830,7 +830,47 @@ Network     Application
  Issue         Issue
 ```
 
+
+
 ---
+
+## Q36. How do you view the logs of a Docker container?
+
+> **AKA:** How do you check why a Docker container is failing?
+
+> **Difficulty:** Beginner  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+To view the logs of a Docker container, I use the `docker logs <container_name>` command.
+
+Container logs are usually the first place I look when troubleshooting because they show application output, startup messages, errors, and exceptions. These logs often help identify issues such as application crashes, missing dependencies, configuration problems, or failed database connections.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: How do you continuously monitor container logs?**
+
+**Answer:**
+
+To continuously stream logs in real time, I use:
+
+```bash
+docker logs -f <container_name>
+```
+
+The `-f` option follows the log output, making it useful for monitoring applications while they are running.
+
+---
+
+
+
+
+ 
+
+
 
 
 
