@@ -759,6 +759,17 @@ Learn how to identify, troubleshoot, and resolve common Docker issues. This sect
 
 ---
 
+## Q34. A Docker container exits immediately after starting. How would you troubleshoot it?
+> **AKA:** A Docker container is crashing. What steps would you follow to troubleshoot it?
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+### 🎤 Interview Answer
+If a Docker container exits immediately after starting, I first check the container status using `docker ps -a` to see whether it exited and note its exit code, since that often helps narrow down the problem. Then I check the container logs using `docker logs` to understand why the application actually stopped.
+If the issue still isn't clear, I inspect the container configuration using `docker inspect` and verify settings such as environment variables, port mappings, volume mounts, and the startup command. If needed, I run the container interactively to manually test the startup command and see exactly what fails.
+Based on that information, I identify and fix the root cause, which could be an application error, a missing dependency, an incorrect command, or a configuration issue.
+
+---
+
 
 
 
