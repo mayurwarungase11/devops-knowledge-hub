@@ -863,7 +863,56 @@ docker logs -f <container_name>
 
 The `-f` option follows the log output, making it useful for monitoring applications while they are running.
 
+
+
 ---
+
+## Q37. How do you access a running Docker container for debugging?
+
+> **AKA:** How do you enter a running Docker container?
+
+> **Difficulty:** Beginner  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+To access a running Docker container, I use the `docker exec -it <container_name> sh` command. If the container has Bash installed, I can use `docker exec -it <container_name> bash` instead.
+
+I usually access the container when logs aren't enough to identify the issue. Once inside, I can verify files, check environment variables, inspect running processes, test network connectivity, and troubleshoot the application directly.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: When do you use `sh` instead of `bash`?**
+
+**Answer:**
+
+Many lightweight Docker images, such as Alpine Linux, don't include Bash by default. In those cases, `sh` is available and should be used instead. If Bash is installed, you can use `bash` for a more feature-rich shell.
+
+---
+
+### 💻 Example
+
+```bash
+docker exec -it my-app sh
+
+# Check environment variables
+env
+
+# Verify application files
+ls -l
+
+# Test network connectivity
+ping google.com
+
+# Check if the application is listening
+netstat -tuln
+```
+
+---
+
+
 
 
 
