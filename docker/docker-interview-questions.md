@@ -1129,7 +1129,50 @@ If the issue still isn't clear, I enter the container using `docker exec` and te
 
 > 💡 **Quick Note:** A correct `-p` port mapping doesn't guarantee that the application is reachable. The application must also be running and listening on the correct port and network interface.
 
+
+
 ---
+
+## Q44. A Docker Volume is mounted, but data is not being persisted. How would you troubleshoot it?
+
+> **AKA:** Why is my Docker Volume not saving data?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+If data is not being persisted, I first inspect the container using `docker inspect` and check the **Mounts** section to verify that the Docker Volume is attached to the expected directory inside the container.
+
+Next, I confirm that the application is actually writing data to the mounted directory rather than to another location inside the container. If the issue still isn't clear, I verify that the volume still exists and check that the application has the required file permissions to read from and write to the mounted directory.
+
+Based on those checks, I identify whether the issue is caused by an incorrect mount path, application configuration, a missing volume, or file permission problems.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: How do you verify that a Docker Volume is mounted correctly?**
+
+**Answer:**
+
+I use:
+
+```bash
+docker inspect <container_name>
+```
+
+and check the **Mounts** section to confirm that the expected Docker Volume is attached to the correct path inside the container.
+
+---
+
+### 💡 Quick Note
+
+One of the most common mistakes is mounting a Docker Volume correctly but configuring the application to save data somewhere else inside the container. In that case, Docker is working as expected—the application is simply writing to the wrong directory.
+
+---
+
+
 
 
 
