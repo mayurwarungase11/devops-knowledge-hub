@@ -11,7 +11,7 @@ Master the most frequently asked Docker interview questions with concise, interv
 - Section 5: Docker Compose
 - Section 6: Docker Optimization & Security
 - Section 7: Docker Troubleshooting
-- Section 8: Scenario-Based Interview Questions
+
 
 ---
 
