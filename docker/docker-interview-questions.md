@@ -911,6 +911,30 @@ netstat -tuln
 ```
 
 ---
+## Q38. How do you inspect a Docker container?
+
+> **AKA:** How do you check a Docker container's configuration?
+
+> **Difficulty:** Beginner  
+> **Estimated Answer Time:** 20–30 seconds
+
+### 🎤 Interview Answer
+
+To inspect a Docker container, I use the `docker inspect <container_name>` command. It provides detailed information about the container's configuration and current state.
+
+I commonly use it during troubleshooting to verify details such as the container's IP address, environment variables, port mappings, volume mounts, network configuration, startup command, and container status. This helps identify configuration issues that may not be visible from the container logs alone.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: When would you use `docker inspect` instead of `docker logs`?**
+
+**Answer:**
+
+I use `docker logs` to understand what the application is doing, such as startup messages, errors, or exceptions. I use `docker inspect` when I need to verify how the container is configured, including its networking, environment variables, mounted volumes, and port mappings.
+
+---
 
 
 
