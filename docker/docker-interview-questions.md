@@ -934,7 +934,38 @@ I commonly use it during troubleshooting to verify details such as the container
 
 I use `docker logs` to understand what the application is doing, such as startup messages, errors, or exceptions. I use `docker inspect` when I need to verify how the container is configured, including its networking, environment variables, mounted volumes, and port mappings.
 
+
+
 ---
+
+## Q39. A Docker Image builds successfully, but the application doesn't work. What would you check?
+
+> **AKA:** The Docker Image builds without errors, but the application fails at runtime. How would you troubleshoot it?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+If the Docker Image builds successfully but the application doesn't work, I first check the container logs using `docker logs` to identify any startup errors or exceptions.
+
+Next, I verify that the required environment variables and configuration files are present and correctly configured. I also check whether the `CMD` or `ENTRYPOINT` is starting the correct application and ensure that all required runtime dependencies are available.
+
+If the issue still isn't clear, I enter the container using `docker exec` to test the application directly and identify the root cause.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: If the image builds successfully, why can the application still fail?**
+
+**Answer:**
+
+Building an image only confirms that Docker successfully created the image. It doesn't guarantee that the application will run correctly. Runtime failures can still occur because of incorrect configuration, missing environment variables, dependency issues, or an incorrect startup command.
+
+---
+
+
 
 
 
