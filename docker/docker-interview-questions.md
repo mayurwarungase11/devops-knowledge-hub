@@ -965,6 +965,34 @@ Building an image only confirms that Docker successfully created the image. It d
 
 ---
 
+## Q40. The application inside a Docker container cannot connect to the database. How would you troubleshoot it?
+> **AKA:** My application is running, but it can't connect to the database. What would you check?
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+### 🎤 Interview Answer
+If the application cannot connect to the database, I first check the application logs using `docker logs` to identify any connection errors or exceptions.
+Next, I verify that the database service is running and confirm that both the application and database containers are connected to the same Docker network. I also verify the database configuration, including the host, port, username, password, and database name.
+If the issue still isn't clear, I enter the application container using `docker exec` and test whether it can reach the database service. Based on those results, I identify whether the problem is related to networking, database configuration, credentials, or the database service itself.
+
+---
+
+### 🔍 Common Follow-up
+**Q: How do you verify that the application container can reach the database?**
+**Answer:**
+I enter the application container using `docker exec` and test connectivity to the database service. The exact command depends on the tools available inside the container, but the goal is to verify that the database host is reachable and that the database port is accepting connections.
+
+---
+### 💻 Example
+```bash
+# Enter the application container
+docker exec -it app sh
+# Test connectivity to the database service
+nc -zv database 3306
+```
+If the connection succeeds, the application can reach the database, and the issue is more likely related to configuration, credentials, or the application itself. If the connection fails, the problem is likely related to networking, the database service, or firewall rules.
+
+> 💡 **Quick Note:** `nc` isn't always installed on minimal images like Alpine. If it's missing, `curl -v telnet://database:3306` or a quick connection test using the app's own language (e.g., a one-line Python or Node script) works as a fallback.
+---
 
 
 
