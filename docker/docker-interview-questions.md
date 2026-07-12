@@ -992,7 +992,62 @@ nc -zv database 3306
 If the connection succeeds, the application can reach the database, and the issue is more likely related to configuration, credentials, or the application itself. If the connection fails, the problem is likely related to networking, the database service, or firewall rules.
 
 > 💡 **Quick Note:** `nc` isn't always installed on minimal images like Alpine. If it's missing, `curl -v telnet://database:3306` or a quick connection test using the app's own language (e.g., a one-line Python or Node script) works as a fallback.
+
+
+
 ---
+
+## Q41. Two Docker containers cannot communicate with each other. How would you troubleshoot it?
+
+> **AKA:** My frontend container can't connect to my backend container. What would you check?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+If two Docker containers cannot communicate, I first verify that both containers are running using `docker ps`. Next, I check that both containers are connected to the same user-defined Docker network, since Docker provides automatic DNS-based name resolution on user-defined networks.
+
+I also verify that the application is using the correct service or container name instead of hardcoded IP addresses. If the issue still isn't clear, I enter one container using `docker exec` and test connectivity to the other container.
+
+Finally, I check the application logs to identify any networking or configuration errors and determine the root cause.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: Why is a user-defined Docker network recommended instead of the default bridge network?**
+
+**Answer:**
+
+A user-defined Docker network provides automatic DNS-based name resolution, allowing containers to communicate using their service or container names. The default bridge network doesn't provide this automatic name resolution, so containers typically need IP addresses unless additional configuration is performed.
+
+---
+
+### 💻 Example
+
+```bash
+# Verify both containers are running
+docker ps
+
+# Check network configuration
+docker inspect frontend
+docker inspect backend
+
+# Enter the frontend container
+docker exec -it frontend sh
+
+# Test connectivity to the backend service
+curl http://backend:8080
+```
+
+---
+
+> 💡 **Quick Note:** Avoid using container IP addresses for communication. Container IPs can change when containers are recreated, while service or container names remain consistent on a user-defined Docker network.
+
+---
+
+
 
 
 
