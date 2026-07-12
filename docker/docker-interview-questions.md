@@ -1170,7 +1170,44 @@ and check the **Mounts** section to confirm that the expected Docker Volume is a
 
 One of the most common mistakes is mounting a Docker Volume correctly but configuring the application to save data somewhere else inside the container. In that case, Docker is working as expected—the application is simply writing to the wrong directory.
 
+
+
 ---
+
+## Q45. The Docker build is taking too long. How would you optimize it?
+
+> **AKA:** How would you improve the performance of a slow Docker build?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+If a Docker build is taking too long, I first review the Dockerfile to ensure that layer caching is being used effectively. I place instructions that change less frequently, such as installing dependencies, before instructions that change more often, such as copying application source code.
+
+Next, I use Multi-stage Builds to keep the final image small, use a `.dockerignore` file to reduce the build context, and choose a lightweight base image such as Alpine Linux. I also avoid reinstalling dependencies unless they have actually changed.
+
+These optimizations help reduce build time and improve overall build efficiency.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: Why does the order of Dockerfile instructions affect build time?**
+
+**Answer:**
+
+Docker caches each layer during the build process. If an early layer changes, Docker has to rebuild that layer and every layer after it. Placing frequently changing instructions later allows Docker to reuse cached layers, significantly reducing build time.
+
+---
+
+### 💡 Quick Note
+
+A common optimization is to copy dependency files first, install the dependencies, and then copy the rest of the application code. This allows Docker to reuse the dependency layer when only the application code changes.
+
+---
+
+
 
 
 
