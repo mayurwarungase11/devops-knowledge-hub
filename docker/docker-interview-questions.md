@@ -1045,7 +1045,60 @@ curl http://backend:8080
 
 > 💡 **Quick Note:** Avoid using container IP addresses for communication. Container IPs can change when containers are recreated, while service or container names remain consistent on a user-defined Docker network.
 
+
 ---
+
+## Q42. A Docker container keeps restarting continuously. What could be the reasons?
+
+> **AKA:** Why does a Docker container go into a restart loop?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+If a Docker container keeps restarting, I first check the container logs using `docker logs` to identify any startup errors or application crashes.
+
+Next, I verify the container configuration using `docker inspect`, including the `CMD` or `ENTRYPOINT`, environment variables, and any required dependencies such as a database or external service. I also check whether the configured restart policy is causing Docker to automatically restart the container after it exits.
+
+Based on that information, I determine whether the issue is caused by an application failure, configuration problem, missing dependency, insufficient memory, or the restart policy itself.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: What are the most common reasons a container enters a restart loop?**
+
+**Answer:**
+
+Some common causes include:
+
+- Application crashes during startup.
+- Incorrect `CMD` or `ENTRYPOINT`.
+- Missing or incorrect environment variables.
+- Required services, such as a database, are unavailable.
+- Insufficient memory (**OOMKilled / Exit Code 137**).
+- A restart policy (`always`, `unless-stopped`, or `on-failure`) repeatedly restarts the container after it exits.
+
+---
+
+### 💻 Example
+
+```bash
+# Check container logs
+docker logs my-app
+
+# Inspect the container configuration
+docker inspect my-app
+```
+
+---
+
+> 💡 **Quick Note:** A restart loop is usually a symptom, not the root cause. In many cases, the main application has already failed, and Docker's restart policy simply keeps trying to start it again. If you see **Exit Code 137**, it often indicates the container was terminated because it ran out of memory (OOMKilled).
+
+---
+
+
 
 
 
