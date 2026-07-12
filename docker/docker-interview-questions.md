@@ -1276,7 +1276,64 @@ Yes, but usually only for pulling official base images, such as `node`, `nginx`,
 
 > 💡 **Quick Note:** Think of Docker Hub as a public library where anyone can access public books. A Private Registry is like a company's secure archive—same purpose of storing images, but with controlled access so only authorized users and systems can retrieve them.
 
+
+
 ---
+
+## Q48. Docker is consuming too much disk space. How would you clean it up?
+
+> **AKA:** How do you free up disk space used by Docker?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+If Docker is consuming too much disk space, I first check what's using the space by running `docker system df`, which provides a summary of Docker disk usage. Over time, unused Docker resources such as images, stopped containers, unused networks, build cache, and volumes can accumulate and consume significant disk space.
+
+To clean up these unused resources, I use `docker system prune`. If additional cleanup is required, I review unused volumes separately because they may contain important application data.
+
+This approach helps free disk space while reducing the risk of accidentally removing resources that are still needed.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: What does `docker system prune` remove?**
+
+**Answer:**
+
+By default, `docker system prune` removes:
+
+- Stopped containers
+- Unused networks
+- Dangling images
+- Build cache
+
+It does **not** remove unused volumes unless you explicitly include the `--volumes` option.
+
+---
+
+### 💻 Example
+
+```bash
+# Review Docker disk usage
+docker system df
+
+# Remove unused Docker resources
+docker system prune
+
+# Remove unused volumes (use with caution)
+docker system prune --volumes
+```
+
+---
+
+> 💡 **Quick Note:** Be careful when removing volumes. Unlike containers, volumes often store persistent application data such as databases or uploaded files. Always confirm that a volume is no longer needed before deleting it.
+
+---
+
+
 
 
 
