@@ -1096,7 +1096,42 @@ docker inspect my-app
 
 > 💡 **Quick Note:** A restart loop is usually a symptom, not the root cause. In many cases, the main application has already failed, and Docker's restart policy simply keeps trying to start it again. If you see **Exit Code 137**, it often indicates the container was terminated because it ran out of memory (OOMKilled).
 
+
+
 ---
+
+## Q43. Port mapping is configured correctly, but the application is still not accessible. What would you check?
+
+> **AKA:** The Docker port mapping looks correct, but the application still isn't reachable. How would you troubleshoot it?
+
+> **Difficulty:** Intermediate  
+> **Estimated Answer Time:** 30–45 seconds
+
+### 🎤 Interview Answer
+
+If the port mapping is correct but the application is still not accessible, I first check the container logs using `docker logs` to identify any startup errors or application failures.
+
+Next, I verify that the application is listening on the expected port and is bound to `0.0.0.0` rather than only `127.0.0.1`, since applications listening only on localhost cannot be accessed from outside the container.
+
+If the issue still isn't clear, I enter the container using `docker exec` and test the application locally with `curl localhost:<application_port>`. If the application responds, I then verify external network settings such as firewall rules or cloud security groups.
+
+---
+
+### 🔍 Common Follow-up
+
+**Q: Why should an application listen on `0.0.0.0` instead of `127.0.0.1` inside a Docker container?**
+
+**Answer:**
+
+`127.0.0.1` (localhost) accepts connections only from inside the container itself. Binding the application to `0.0.0.0` allows it to accept connections from outside the container through Docker's port mapping.
+
+---
+
+> 💡 **Quick Note:** A correct `-p` port mapping doesn't guarantee that the application is reachable. The application must also be running and listening on the correct port and network interface.
+
+---
+
+
 
 
 
