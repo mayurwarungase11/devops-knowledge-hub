@@ -429,7 +429,7 @@ Docker containers communicate by connecting to the same Docker network. In most 
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 The Host Network is a Docker network mode where the container uses the host machine's network directly instead of having its own separate network. Because of this, the container can communicate faster and doesn't need its own network isolation.
 
