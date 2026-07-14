@@ -266,7 +266,7 @@ Both `COPY` and `ADD` are used to copy files and directories into a Docker Image
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Both `ENV` and `ARG` are used to define variables in a Dockerfile, but they differ in when those variables are available.
 
