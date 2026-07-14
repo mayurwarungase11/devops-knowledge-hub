@@ -240,7 +240,7 @@ In practice, `ENTRYPOINT` and `CMD` are often used together, where `ENTRYPOINT` 
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Both `COPY` and `ADD` are used to copy files and directories into a Docker Image, but `ADD` provides a few additional features.
 
