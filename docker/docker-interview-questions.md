@@ -403,7 +403,7 @@ In general, **Named Volumes** are preferred because they're easier to manage and
 > **Difficulty:** Beginner  
 > **Estimated Answer Time:** 30–45 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Docker Networking is a feature that enables communication between Docker containers, the host machine, and external networks. By default, containers run in isolation, so they cannot communicate unless they are connected through a Docker network.
 
