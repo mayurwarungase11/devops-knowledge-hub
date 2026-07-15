@@ -461,7 +461,7 @@ We use the None Network when an application doesn't require network communicatio
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 The Overlay Network is a Docker network mode that allows containers running on different host machines to communicate as if they were on the same network.
 
