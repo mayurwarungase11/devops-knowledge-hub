@@ -217,4 +217,38 @@ docker push mayurwarungase/my-app:v1
 docker pull nginx
 ```
 
+# 🔍 Inspection & Troubleshooting Commands
+
+| Command | Purpose |
+|---------|---------|
+| `docker logs <container>` | View container logs. |
+| `docker logs -f <container>` | Follow container logs in real time. |
+| `docker exec -it <container> sh` | Open an interactive shell inside a running container. |
+| `docker inspect <container>` | Display detailed container information. |
+| `docker top <container>` | Show running processes inside a container. |
+| `docker stats` | Display live CPU, memory, and network usage. |
+| `docker events` | Monitor Docker events in real time. |
+| `docker diff <container>` | Show changes made to a container's filesystem. |
+| `docker system df` | Display Docker disk usage. |
+| `docker version` | Display Docker Client and Server version information. |
+| `docker info` | Display detailed Docker system information. |
+
+---
+
+### 💻 Examples
+
+```bash
+# View logs
+docker logs my-app
+
+# Access a container
+docker exec -it my-app sh
+
+# View Docker disk usage
+docker system df
+
+# View Docker information
+docker info
+```
+
 ---
