@@ -39,4 +39,46 @@ This document contains the most commonly used Docker commands for day-to-day dev
 | `docker top <container>` | Show running processes inside a container. |
 | `docker wait <container>` | Wait until a container stops and return its exit code. |
 
+# 🖼️ Image Commands
+
+| Command | Purpose |
+|---------|---------|
+| `docker images` | List all Docker Images available on your system. |
+| `docker image ls` | Another way to list Docker Images. |
+| `docker pull <image>` | Download an image from Docker Hub or another registry. |
+| `docker build -t <image>:<tag> .` | Build a Docker Image from a Dockerfile. |
+| `docker build --no-cache -t <image> .` | Build an image without using cached layers. |
+| `docker tag <source-image> <username/repository:tag>` | Create a new tag for an existing image. |
+| `docker push <username/repository:tag>` | Push an image to a Docker Registry. |
+| `docker rmi <image>` | Remove a Docker Image. |
+| `docker rmi -f <image>` | Force remove a Docker Image. |
+| `docker history <image>` | View the layer history of an image. |
+| `docker image inspect <image>` | Display detailed information about an image. |
+| `docker save -o <file>.tar <image>` | Save a Docker Image as a tar file. |
+| `docker load -i <file>.tar` | Load a Docker Image from a tar file. |
+
+---
+
+### 💻 Examples
+
+```bash
+# Download an image
+docker pull nginx
+
+# Build an image
+docker build -t my-app:v1 .
+
+# Tag an image
+docker tag my-app:v1 mayurwarungase/my-app:v1
+
+# Push an image
+docker push mayurwarungase/my-app:v1
+
+# Save an image
+docker save -o nginx.tar nginx
+
+# Load an image
+docker load -i nginx.tar
+```
+
 ---
