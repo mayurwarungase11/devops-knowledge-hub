@@ -251,4 +251,38 @@ docker system df
 docker info
 ```
 
+# 🧹 Cleanup Commands
+
+| Command | Purpose |
+|---------|---------|
+| `docker system prune` | Remove unused Docker resources. |
+| `docker system prune -a` | Remove all unused images, containers, networks, and build cache. |
+| `docker system prune --volumes` | Remove unused Docker Volumes along with other unused resources. |
+| `docker image prune` | Remove unused (dangling) Docker Images. |
+| `docker container prune` | Remove all stopped containers. |
+| `docker volume prune` | Remove all unused Docker Volumes. |
+| `docker network prune` | Remove all unused Docker Networks. |
+
+---
+
+### 💻 Examples
+
+```bash
+# Check Docker disk usage
+docker system df
+
+# Remove unused Docker resources
+docker system prune
+
+# Remove stopped containers
+docker container prune
+
+# Remove unused volumes
+docker volume prune
+```
+
+---
+
+> 💡 **Quick Note:** Always review what you're deleting before using cleanup commands in production. Volumes may contain persistent application data, so avoid deleting them unless you're sure they're no longer needed.
+
 ---
