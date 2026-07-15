@@ -156,4 +156,37 @@ docker network inspect my-network
 docker network prune
 ```
 
+# 🐳 Docker Compose Commands
+
+| Command | Purpose |
+|---------|---------|
+| `docker compose up` | Create and start all services defined in the Compose file. |
+| `docker compose up -d` | Start all services in the background (Detached Mode). |
+| `docker compose down` | Stop and remove all services, networks, and containers created by Compose. |
+| `docker compose ps` | List all services and their current status. |
+| `docker compose logs` | View logs from all Compose services. |
+| `docker compose logs -f` | Follow logs in real time. |
+| `docker compose build` | Build or rebuild service images. |
+| `docker compose restart` | Restart one or more services. |
+| `docker compose stop` | Stop services without removing them. |
+| `docker compose start` | Start previously stopped services. |
+
+---
+
+### 💻 Examples
+
+```bash
+# Start all services
+docker compose up -d
+
+# View running services
+docker compose ps
+
+# View logs
+docker compose logs -f
+
+# Stop and remove everything
+docker compose down
+```
+
 ---
