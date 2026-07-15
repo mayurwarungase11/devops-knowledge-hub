@@ -506,7 +506,7 @@ Learn how to define, manage, and run multi-container applications using Docker C
 > **Difficulty:** Beginner  
 > **Estimated Answer Time:** 20–30 seconds
 
-**🎤 Interview Answer**
+### 🎤 Interview Answer
 
 Docker Compose is a tool that lets us define, run, and manage multiple Docker containers using a single `docker-compose.yml` file instead of starting each container manually.
 
@@ -571,7 +571,7 @@ Learn how to build efficient, secure, and production-ready Docker Images. This s
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 There are a few practical things we can do. We can start with a smaller base image, like Alpine Linux, instead of a full OS image. We can also use multi-stage builds so only the final, necessary files make it into the image instead of all the build tools. Beyond that, using a `.dockerignore` file keeps unrelated files out of the build context, and cleaning up unnecessary packages or temporary files during the build helps keep the image as small as possible.
 
