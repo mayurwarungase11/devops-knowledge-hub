@@ -285,4 +285,14 @@ docker volume prune
 
 > 💡 **Quick Note:** Always review what you're deleting before using cleanup commands in production. Volumes may contain persistent application data, so avoid deleting them unless you're sure they're no longer needed.
 
----
+## 💡 Interview Tips
+
+- Learn commands by category instead of memorizing them randomly.
+- Practice the commands in a local Docker environment.
+- Understand what each command does before memorizing its syntax.
+- For troubleshooting, remember the workflow:
+  1. `docker ps`
+  2. `docker logs`
+  3. `docker inspect`
+  4. `docker exec`
+  5. Find the root cause.
