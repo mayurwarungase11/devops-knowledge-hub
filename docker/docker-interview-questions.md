@@ -416,7 +416,7 @@ We use Docker Networking to allow containers to communicate with each other, acc
 > **Difficulty:** Beginner  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Docker containers communicate by connecting to the same Docker network. In most real-world applications, this is a user-defined Bridge Network, where Docker provides built-in DNS-based name resolution. This allows containers to communicate using their container names instead of IP addresses, making communication simpler and more reliable. For example, a frontend container can communicate with a backend container using its container name without worrying about changing IP addresses
 
