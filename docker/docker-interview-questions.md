@@ -445,7 +445,7 @@ We usually use the Host Network for applications that need the fastest possible 
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 The None Network is a Docker network mode where the container runs without any network connectivity. It doesn't have access to the internet, the host machine, or other containers.
 
