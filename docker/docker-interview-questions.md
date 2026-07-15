@@ -346,7 +346,7 @@ They're commonly used to store persistent data such as databases, application fi
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 30–45 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Both Bind Mounts and Docker Volumes are used to persist data outside a container, but they differ in how that data is managed.
 
