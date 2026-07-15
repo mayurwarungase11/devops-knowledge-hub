@@ -691,7 +691,7 @@ CMD ["node", "app.js"]
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 30–45 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 When writing a Dockerfile, I usually follow a few important best practices. I start with a lightweight base image, such as Alpine Linux, and use Multi-stage Builds to keep the final image small.
 
