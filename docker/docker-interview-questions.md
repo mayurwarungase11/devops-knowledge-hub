@@ -211,7 +211,7 @@ Some of the most commonly used Dockerfile instructions are:
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 30–45 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 These three Dockerfile instructions are often confused, but they serve different purposes.
 
