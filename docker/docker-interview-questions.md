@@ -332,7 +332,7 @@ Learn how Docker stores persistent data using Volumes and Bind Mounts. This sect
 > **Difficulty:** Beginner  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Docker Volumes are Docker-managed storage used to persist data outside a container's filesystem. We use them because, by default, any data stored inside a container is lost when the container is removed. Volumes keep the data separate from the container, allowing it to survive container restarts, deletion, or recreation.
 
