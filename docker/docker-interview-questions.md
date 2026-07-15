@@ -374,7 +374,7 @@ A **Docker Volume**, on the other hand, is managed by Docker itself. It's indepe
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Both Named Volumes and Anonymous Volumes are Docker-managed storage used to persist data, but the difference lies in how Docker identifies and manages them.
 
