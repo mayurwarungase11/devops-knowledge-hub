@@ -81,4 +81,35 @@ docker save -o nginx.tar nginx
 docker load -i nginx.tar
 ```
 
+# 💾 Volume Commands
+
+| Command | Purpose |
+|---------|---------|
+| `docker volume create <volume>` | Create a new Docker Volume. |
+| `docker volume ls` | List all Docker Volumes. |
+| `docker volume inspect <volume>` | View detailed information about a Docker Volume. |
+| `docker volume rm <volume>` | Remove a Docker Volume. |
+| `docker volume prune` | Remove all unused Docker Volumes. |
+
+---
+
+### 💻 Examples
+
+```bash
+# Create a volume
+docker volume create my-volume
+
+# List all volumes
+docker volume ls
+
+# Mount a volume
+docker run -d -v my-volume:/usr/share/nginx/html nginx
+
+# Inspect a volume
+docker volume inspect my-volume
+
+# Remove unused volumes
+docker volume prune
+```
+
 ---
