@@ -112,4 +112,38 @@ docker volume inspect my-volume
 docker volume prune
 ```
 
+# 🌐 Network Commands
+
+| Command | Purpose |
+|---------|---------|
+| `docker network ls` | List all Docker Networks. |
+| `docker network create <network>` | Create a new Docker Network. |
+| `docker network create --subnet <subnet> <network>` | Create a network with a custom subnet. |
+| `docker network inspect <network>` | Display detailed information about a Docker Network. |
+| `docker network connect <network> <container>` | Connect a running container to a network. |
+| `docker network disconnect <network> <container>` | Disconnect a container from a network. |
+| `docker network rm <network>` | Remove a Docker Network. |
+| `docker network prune` | Remove all unused Docker Networks. |
+
+---
+
+### 💻 Examples
+
+```bash
+# Create a network
+docker network create my-network
+
+# Create a network with subnet
+docker network create --subnet 172.18.0.0/20 my-network
+
+# Run a container on a network
+docker run -d --network my-network nginx
+
+# Inspect a network
+docker network inspect my-network
+
+# Remove unused networks
+docker network prune
+```
+
 ---
