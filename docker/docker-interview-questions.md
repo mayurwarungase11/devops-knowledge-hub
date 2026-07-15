@@ -475,7 +475,7 @@ We use the Overlay Network in multi-host environments, such as Docker Swarm or K
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 30–45 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 The choice of Docker network depends on where your containers are running and how they need to communicate.
 
