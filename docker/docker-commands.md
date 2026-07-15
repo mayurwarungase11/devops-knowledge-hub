@@ -189,4 +189,32 @@ docker compose logs -f
 docker compose down
 ```
 
+# 📦 Registry Commands
+
+| Command | Purpose |
+|---------|---------|
+| `docker login` | Log in to a Docker Registry. |
+| `docker logout` | Log out from the current Docker Registry. |
+| `docker tag <image> <username/repository:tag>` | Create a new tag before pushing an image. |
+| `docker push <username/repository:tag>` | Upload an image to a Docker Registry. |
+| `docker pull <image>` | Download an image from a Docker Registry. |
+
+---
+
+### 💻 Examples
+
+```bash
+# Login
+docker login
+
+# Tag an image
+docker tag my-app:v1 mayurwarungase/my-app:v1
+
+# Push an image
+docker push mayurwarungase/my-app:v1
+
+# Pull an image
+docker pull nginx
+```
+
 ---
