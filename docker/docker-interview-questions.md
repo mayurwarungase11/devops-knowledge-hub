@@ -731,7 +731,7 @@ Following these practices helps build Docker containers that are more secure and
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 30–45 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Sensitive information such as passwords, API keys, and access tokens should never be hardcoded into a Dockerfile or included in a Docker Image because anyone with access to the image can retrieve them.
 
