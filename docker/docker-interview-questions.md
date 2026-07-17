@@ -506,7 +506,7 @@ Learn how to define, manage, and run multi-container applications using Docker C
 > **Difficulty:** Beginner  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Docker Compose is a tool that lets us define, run, and manage multiple Docker containers using a single `docker-compose.yml` file instead of starting each container manually.
 
