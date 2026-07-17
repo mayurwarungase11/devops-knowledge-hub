@@ -584,7 +584,7 @@ There are a few practical things we can do. We can start with a smaller base ima
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 A Multi-stage Build is a Docker build technique where we use multiple stages within a single Dockerfile. The first stage is used to build the application, while the final stage contains only the files needed to run it.
 
