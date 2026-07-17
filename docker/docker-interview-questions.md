@@ -712,7 +712,7 @@ Following these practices helps build Docker Images that are smaller, more secur
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 30–45 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 To secure a Docker container, I follow a few important security practices. I use a trusted and updated base image, run containers as a non-root user, and keep the image as small as possible by removing unnecessary packages to reduce the attack surface.
 
