@@ -779,7 +779,7 @@ Based on that information, I identify and fix the root cause, which could be an 
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 30–45 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 If a Docker container is running but the application isn't accessible from the browser, I first verify that the container is running using `docker ps`. Then I check whether the required ports are mapped correctly between the host and the container.
 
