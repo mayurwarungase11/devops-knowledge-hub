@@ -536,7 +536,7 @@ We use Docker Swarm when applications need to run on multiple servers with featu
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 30–45 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Docker Compose and Docker Swarm are both used to manage multiple containers, but they are designed for different purposes.
 
