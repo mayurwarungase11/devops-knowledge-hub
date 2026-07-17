@@ -522,7 +522,7 @@ We use Docker Compose because modern applications usually consist of multiple se
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Docker Swarm is Docker's built-in tool for managing containers across multiple machines as a single cluster.
 
