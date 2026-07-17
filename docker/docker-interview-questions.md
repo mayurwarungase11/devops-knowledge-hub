@@ -637,7 +637,7 @@ CMD ["/myapp"]
 > **Difficulty:** Intermediate  
 > **Estimated Answer Time:** 20–30 seconds
 
-### 🎤 Interview Answer
+**🎤 Interview Answer**
 
 Docker Images are built in layers, where each Dockerfile instruction such as `FROM`, `RUN`, `COPY`, or `ADD` creates a separate read-only layer. These layers are stacked together to form the final Docker Image.
 
