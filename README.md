@@ -193,4 +193,4 @@ Your support motivates me to keep improving and expanding this project.
 
 ## 🚀 Happy Learning!
 
-> **"The best way to learn DevOps is not just by reading—it's by building, troubleshooting, and improving every day."**
+> **"The best way to learn DevOps is not just by reading—it's by building, troubleshooting, and improving every days."**
