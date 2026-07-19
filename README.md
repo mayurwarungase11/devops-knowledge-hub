@@ -16,7 +16,7 @@ Most DevOps repositories only provide installation steps or random notes.
 - 💻 Learn practical commands
 - 🛠️ Troubleshoot real-world issues
 - 🏗️ Understand production architectures
-- 🚀 Build real DevOps projects
+- 🚀 Build real DevOps project
 - 🎤 Prepare for DevOps interviews
 
 Whether you're a beginner or an experienced engineer, this repository provides a structured roadmap to strengthen your DevOps skills.
