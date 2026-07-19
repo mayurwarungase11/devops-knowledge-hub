@@ -19,7 +19,7 @@ Most DevOps repositories only provide installation steps or random notes.
 - 🚀 Build real DevOps projects
 - 🎤 Prepare for DevOps interviews
 
-Whether you're a beginner or an experienced engineer, this repository provides a structured roadmap to strengthen your DevOps skill.
+Whether you're a beginner or an experienced engineer, this repository provides a structured roadmap to strengthen your DevOps skills.
 
 ---
 
