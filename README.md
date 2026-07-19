@@ -1,6 +1,6 @@
 # 🚀 DevOps Knowledge Hub
 
-> **Master DevOps from Fundamentals to Production.**
+> **Master DevOps from Fundamental to Production.**
 >
 > A comprehensive, interview-focused, and production-oriented DevOps repository covering Linux, Git, Docker, Kubernetes, AWS, Terraform, CI/CD, Security, Monitoring, Troubleshooting, Architecture, and Real-World Projects.
 
