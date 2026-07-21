@@ -98,5 +98,5 @@ sudo systemctl status docker
 Docker service should show:
 
 ```text
-Active: active (running
+Active: active (running)
 ```
