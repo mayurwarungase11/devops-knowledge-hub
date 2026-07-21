@@ -10,7 +10,7 @@ sudo apt update -y
 
 ## Step 2: Install Required Dependencies
 
-Install packages required to add external repositories and download Docker packages securely
+Install packages required to add external repositories and download Docker packages securely.
 
 ```bash
 sudo apt install -y ca-certificates curl gnupg lsb-release
