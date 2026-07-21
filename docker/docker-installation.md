@@ -5,7 +5,7 @@
 Update the package list to ensure the latest package information is available.
 
 ```bash
-sudo apt update -y
+sudo apt update 
 ```
 
 ## Step 2: Install Required Dependencies
