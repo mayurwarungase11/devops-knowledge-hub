@@ -1,4 +1,4 @@
-⁶# Docker Installation on Ubuntu
+⁶# Docker Installation on Ubunt
 
 ## Step 1: Update Package Index
 
