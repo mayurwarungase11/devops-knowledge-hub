@@ -2,7 +2,7 @@
 
 ## Step 1: Update Package Index
 
-Update the package list to ensure the lates package information is available .
+Update the package list to ensure the latest package information is available .
 
 ```bash
 sudo apt update -y
