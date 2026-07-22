@@ -1,4 +1,4 @@
-# Install Trivy on Ubuntu (Official)
+# Install Trivy on Ubuntu (Official
 ```
 sudo apt update -y
 
