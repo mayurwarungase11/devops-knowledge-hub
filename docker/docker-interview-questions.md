@@ -1,4 +1,4 @@
-# Docker Interview Question
+# Docker Interview Questions
 
 Master the most frequently asked Docker interview questions with concise, interview-ready answers.
 
