@@ -2,7 +2,7 @@
 
 Master the most frequently asked Docker interview questions with concise, interview-ready answers.
 
-## 📚 Content
+## 📚 Contents
 
 - Section 1: Docker Fundamentals
 - Section 2: Docker Images & Dockerfile
