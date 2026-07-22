@@ -1,4 +1,4 @@
-# Terraform Installatio
+# Terraform Installation
 
 ## Update Packages
 
