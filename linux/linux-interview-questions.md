@@ -211,3 +211,50 @@ Without the Kernel, the operating system cannot function because it is responsib
 
 The Kernel is called the heart of the operating system because it manages all critical system resources and controls communication between applications and the hardware. Every hardware-related operation passes through the Kernel.
 
+---
+# Q4. What are the responsibilities of the Linux Kernel?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+The Linux Kernel is responsible for managing the system's hardware resources and ensuring that applications run efficiently. It performs several important tasks behind the scenes.
+
+Let's look at its main responsibilities.
+
+### 1. Process Management
+
+The Kernel creates, schedules, and terminates processes. It decides which process gets CPU time and ensures multiple processes can run efficiently without interfering with each other.
+
+### 2. Memory Management
+
+The Kernel manages the system's RAM by allocating memory to processes when needed and freeing it once the process finishes. It also uses virtual memory to improve system performance.
+
+### 3. Device Management
+
+The Kernel communicates with hardware devices such as keyboards, disks, printers, USB devices, and network cards through device drivers.
+
+### 4. File System Management
+
+The Kernel manages how data is stored and retrieved from storage devices. It handles operations such as creating, reading, writing, and deleting files while maintaining the file system structure.
+
+### 5. Network Management
+
+The Kernel manages network communication by handling protocols like TCP/IP, routing network packets, and controlling data transfer between systems.
+
+### 6. Security and Access Control
+
+The Kernel enforces file permissions, user privileges, and access control policies to ensure that only authorized users and processes can access system resources.
+
+---
+
+## 🔍 Common Follow-up
+
+### Q. Which Kernel responsibility is most important for a DevOps Engineer?
+
+All responsibilities are important, but **Process Management, Memory Management, File System Management, and Network Management** are the ones DevOps Engineers work with most frequently while troubleshooting servers and applications.
+
