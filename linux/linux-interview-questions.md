@@ -175,3 +175,39 @@ An easy way to remember the Linux architecture is from **bottom to top**:
 **Hardware → Kernel → Shell → System Utilities → User Applications**
 
 Remember this sequence because interviewers often ask you to explain Linux architecture in exactly this order.
+
+---
+
+# Q3. What is the Linux Kernel?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+The **Linux Kernel** is the **core component** of the Linux operating system. It acts as a bridge between the hardware and the software, allowing applications to communicate with the computer's hardware safely and efficiently.
+
+Whenever a user runs a command or an application requests resources like CPU, memory, storage, or network access, the request first goes to the Kernel. The Kernel then manages the hardware resources and returns the required result to the application.
+
+Some of the key responsibilities of the Linux Kernel include:
+
+- Process Management
+- Memory Management
+- Device Management
+- File System Management
+- Network Management
+- Security and Access Control
+
+Without the Kernel, the operating system cannot function because it is responsible for managing all communication between software and hardware.
+
+---
+
+## 🔍 Common Follow-up
+
+### Q. Why is the Kernel called the "heart" of the operating system?
+
+The Kernel is called the heart of the operating system because it manages all critical system resources and controls communication between applications and the hardware. Every hardware-related operation passes through the Kernel.
+
