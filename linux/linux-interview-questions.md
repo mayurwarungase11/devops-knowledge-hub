@@ -34,7 +34,7 @@ Master the most frequently asked Linux interview questions with concise, intervi
 
 # Section 1: Linux Fundamentals
 
-# Q1. What is Linux?
+# Q1. What is Linux
 
 **Difficulty:** 🟢 Beginner
 
