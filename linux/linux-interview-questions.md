@@ -1,4 +1,4 @@
-# 🐧 Linux Interview Questions
+# 🐧 Linux Interview Question
 
 Master the most frequently asked Linux interview questions with concise, interview-ready answers.
 
