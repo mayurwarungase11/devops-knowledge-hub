@@ -6,7 +6,7 @@ Master the most frequently asked Linux interview questions with concise, intervi
 
 ## 📚 Contents
 
-### Section 1: Linux Fundamentals
+### Section 1: Linux Fundamental
 
 ### Section 2: Linux File System
 
