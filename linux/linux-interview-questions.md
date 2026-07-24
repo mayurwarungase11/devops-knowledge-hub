@@ -4,7 +4,7 @@ Master the most frequently asked Linux interview questions with concise, intervi
 
 ---
 
-## 📚 Content
+## 📚 Contents
 
 ### Section 1: Linux Fundamentals
 
