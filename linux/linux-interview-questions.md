@@ -10,7 +10,7 @@ Master the most frequently asked Linux interview questions with concise, intervi
 
 ### Section 2: Linux File System
 
-### Section 3: File Permission
+### Section 3: File Permissions
 
 ### Section 4: User & Group Management
 
