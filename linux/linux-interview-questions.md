@@ -511,3 +511,29 @@ This approach improves security, stability, and prevents applications from direc
 **In simple words, every hardware request passes through the Kernel before reaching the application.**
 
 ---
+
+# Q14. Scenario-Based Question – High CPU Usage on a Production Server
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A production Linux server suddenly becomes slow, and you find that one process is consuming 100% CPU.
+
+**Question:** Which Kernel responsibility is involved, and how would you troubleshoot the issue?
+
+**Answer:**
+
+This mainly involves **Process Management**, where the Kernel schedules CPU time for running processes.
+
+To troubleshoot, I would first identify the process using commands like `top` or `htop`. Then I'd investigate why it's consuming excessive CPU by checking application logs, recent deployments, or whether it's stuck in a loop.
+
+If necessary, I would stop or restart the process using `kill` or `systemctl` after confirming that it's safe to do so.
+
+**In simple words, the Kernel manages CPU scheduling, while the administrator identifies and resolves the root cause of the high CPU usage.**
+
+---
