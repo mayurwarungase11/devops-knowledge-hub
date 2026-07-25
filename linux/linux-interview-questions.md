@@ -537,3 +537,9 @@ If necessary, I would stop or restart the process using `kill` or `systemctl` af
 **In simple words, the Kernel manages CPU scheduling, while the administrator identifies and resolves the root cause of the high CPU usage.**
 
 ---
+
+# 📁 Section 2: Linux File System
+
+Learn the Linux File System from an interview perspective. This section covers the directory structure, navigation, file handling, links, and commonly used commands that every Linux/DevOps engineer should know.
+
+---
