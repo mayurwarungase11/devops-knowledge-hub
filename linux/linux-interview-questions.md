@@ -342,3 +342,34 @@ Some popular Linux shells are:
 
 ---
 
+# Q8. Difference Between Shell and Kernel
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+The **Shell** and the **Kernel** are both important parts of the Linux operating system, but they have different responsibilities.
+
+The **Kernel** is the core of the operating system. It directly communicates with the hardware and manages resources like the CPU, memory, storage, and devices.
+
+The **Shell**, on the other hand, is the interface that users interact with. It accepts commands from the user, interprets them, and passes them to the Kernel for execution.
+
+In simple words, **the Shell acts as a messenger between the user and the Kernel, while the Kernel acts as a bridge between the software and the hardware.**
+
+---
+
+### Shell vs Kernel
+
+| Shell | Kernel |
+|--------|--------|
+| Interface between the user and the Kernel | Core of the operating system |
+| Accepts and interprets user commands | Manages hardware and system resources |
+| Does not communicate directly with hardware | Directly communicates with hardware |
+| Examples: Bash, Zsh, Fish | Example: Linux Kernel |
+
+---
+
