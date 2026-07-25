@@ -373,3 +373,27 @@ In simple words, **the Shell acts as a messenger between the user and the Kernel
 
 ---
 
+# Q9. What is a Terminal?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐☆
+
+---
+
+## 🎤 Interview Answer
+
+A **Terminal** is an application that allows users to interact with the Linux operating system using commands.
+
+When you open a Terminal and type a command, the Terminal sends that command to the **Shell**. The Shell then interprets the command and passes it to the Kernel for execution. Once the task is completed, the output is displayed back in the Terminal.
+
+In simple words, **the Terminal is the window where you type commands, while the Shell is the program that understands and executes those commands.**
+
+Some popular terminal applications include:
+
+- GNOME Terminal
+- Konsole
+- xterm
+- Windows Terminal (for WSL)
+
+---
