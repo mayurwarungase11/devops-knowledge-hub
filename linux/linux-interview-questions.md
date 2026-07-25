@@ -485,3 +485,29 @@ The Kernel allocates CPU and memory, schedules the process, and allows it to com
 **In simple words, the flow is: Terminal → Shell → Kernel → Command Execution → Output back to the Terminal.**
 
 ---
+
+# Q13. Scenario-Based Question – Reading a File from Disk
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐☆
+
+---
+
+## 🎤 Interview Answer
+
+Your application needs to read the file `/var/log/syslog`.
+
+**Question:** Can the application directly access the hard disk? Explain how Linux handles this request.
+
+**Answer:**
+
+No. Applications cannot directly communicate with hardware.
+
+When the application requests the file, the request first goes to the Linux Kernel. The Kernel checks whether the application has the required permissions. If permission is granted, the Kernel communicates with the storage device using the appropriate device driver, reads the required data, and returns it to the application.
+
+This approach improves security, stability, and prevents applications from directly controlling hardware.
+
+**In simple words, every hardware request passes through the Kernel before reaching the application.**
+
+---
