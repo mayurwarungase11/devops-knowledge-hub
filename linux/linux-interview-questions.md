@@ -429,3 +429,29 @@ In simple words, **CLI is command-based, whereas GUI is graphics-based.**
 | Best for automation and server management | Best for desktop environments |
 
 ---
+
+# Q11. Scenario-Based Question – Managing a Headless Linux Server
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+Imagine you've launched an Ubuntu EC2 instance on AWS. After connecting through SSH, you notice there's no graphical interface (GUI).
+
+**Question:** How would you manage the server, and why is a GUI usually not installed on production servers?
+
+**Answer:**
+
+I would manage the server using the Command Line Interface (CLI) through SSH.
+
+Production Linux servers usually don't have a GUI because a graphical interface consumes additional CPU, RAM, and storage. Since production servers are designed to run applications efficiently, it's better to use the CLI, which is lightweight, faster, and ideal for remote administration.
+
+The CLI also makes automation easier through shell scripts and tools like Ansible, making it the preferred choice for DevOps engineers.
+
+**In simple words, production servers use the CLI because it's faster, consumes fewer resources, and is easier to automate.**
+
+---
