@@ -543,3 +543,23 @@ If necessary, I would stop or restart the process using `kill` or `systemctl` af
 Learn the Linux File System from an interview perspective. This section covers the directory structure, navigation, file handling, links, and commonly used commands that every Linux/DevOps engineer should know.
 
 ---
+
+# Q15. What is the Linux File System?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+The Linux File System is the way Linux organizes, stores, and manages files and directories on a storage device.
+
+Unlike Windows, where different drives are represented by letters like **C:** or **D:**, Linux organizes everything under a single directory called the **Root ( / )**. Every file, directory, storage device, and even hardware devices are part of this single directory hierarchy.
+
+This makes file management simple, consistent, and easy to navigate across the entire operating system.
+
+**In simple words, the Linux File System is a hierarchical structure that organizes all files and directories under a single Root directory (/).**
+
+---
