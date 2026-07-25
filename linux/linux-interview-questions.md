@@ -397,3 +397,35 @@ Some popular terminal applications include:
 - Windows Terminal (for WSL)
 
 ---
+
+# Q10. Difference Between CLI and GUI
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐☆
+
+---
+
+## 🎤 Interview Answer
+
+**CLI (Command Line Interface)** and **GUI (Graphical User Interface)** are two different ways of interacting with an operating system.
+
+In a **CLI**, users interact with the system by typing commands using a keyboard. It is fast, lightweight, and widely used by Linux administrators and DevOps engineers for automation and server management.
+
+A **GUI**, on the other hand, allows users to interact with the system using graphical elements such as windows, icons, buttons, and menus. It is easier for beginners and is commonly used on personal computers.
+
+In simple words, **CLI is command-based, whereas GUI is graphics-based.**
+
+---
+
+### CLI vs GUI
+
+| CLI | GUI |
+|------|-----|
+| Uses text commands | Uses windows, icons, and menus |
+| Faster for experienced users | Easier for beginners |
+| Requires command knowledge | Easy to learn and use |
+| Consumes fewer system resources | Consumes more system resources |
+| Best for automation and server management | Best for desktop environments |
+
+---
