@@ -317,3 +317,28 @@ For example, **Ubuntu** is a Linux Distribution. It uses the Linux Kernel intern
 
 ---
 
+# Q7. What is a Shell?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A **Shell** is a command-line interpreter that acts as an interface between the user and the Linux Kernel.
+
+Whenever a user enters a command, the Shell reads and interprets it, then passes it to the Kernel for execution. Once the Kernel completes the task, the Shell displays the output back to the user.
+
+In simple words, **we interact with the Shell, and the Shell communicates with the Kernel on our behalf.**
+
+Some popular Linux shells are:
+
+- Bash (Bourne Again Shell)
+- Zsh (Z Shell)
+- Ksh (Korn Shell)
+- Fish (Friendly Interactive Shell)
+
+---
+
