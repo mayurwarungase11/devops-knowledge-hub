@@ -563,3 +563,40 @@ This makes file management simple, consistent, and easy to navigate across the e
 **In simple words, the Linux File System is a hierarchical structure that organizes all files and directories under a single Root directory (/).**
 
 ---
+
+# Q16. Explain the Linux Directory Structure (FHS)
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+The Linux Directory Structure follows the **Filesystem Hierarchy Standard (FHS)**, which defines where different types of files and directories should be stored.
+
+Instead of placing files randomly, Linux organizes everything into standard directories, making the system consistent across different Linux distributions.
+
+As a DevOps Engineer, it's not necessary to memorize every directory, but you should know the purpose of the most commonly used ones.
+
+### Common Linux Directories
+
+| Directory | Purpose |
+|-----------|---------|
+| `/` | Root directory. Everything starts from here. |
+| `/home` | Stores personal files and home directories of users. |
+| `/root` | Home directory of the root (administrator) user. |
+| `/etc` | Stores system configuration files. |
+| `/var` | Stores frequently changing files such as logs, cache, and mail. |
+| `/tmp` | Stores temporary files. |
+| `/usr` | Contains user applications, libraries, and documentation. |
+| `/bin` | Essential user commands like `ls`, `cp`, `mv`, and `cat`. |
+| `/sbin` | System administration commands like `fdisk` and `iptables`. |
+| `/opt` | Optional third-party software. |
+| `/dev` | Represents hardware devices as files. |
+| `/proc` | Virtual filesystem containing information about running processes and the kernel. |
+
+**In simple words, the Linux Directory Structure provides a standard way to organize files, making Linux systems easier to manage and maintain.**
+
+---
