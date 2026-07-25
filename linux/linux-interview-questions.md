@@ -455,3 +455,33 @@ The CLI also makes automation easier through shell scripts and tools like Ansibl
 **In simple words, production servers use the CLI because it's faster, consumes fewer resources, and is easier to automate.**
 
 ---
+
+# Q12. Scenario-Based Question – What Happens After You Press Enter?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+Suppose you open a Terminal and run the following command:
+
+```bash
+docker ps
+```
+
+**Question:** Explain everything that happens after you press **Enter** until the output appears on the screen.
+
+**Answer:**
+
+When I press **Enter**, the Terminal sends the command to the Shell.
+
+The Shell interprets the command and checks whether the `docker` executable exists. If it's found, the Shell asks the Linux Kernel to create a new process.
+
+The Kernel allocates CPU and memory, schedules the process, and allows it to communicate with the Docker daemon. After the command is executed, the output is returned to the Shell, which displays it in the Terminal.
+
+**In simple words, the flow is: Terminal → Shell → Kernel → Command Execution → Output back to the Terminal.**
+
+---
