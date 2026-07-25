@@ -297,5 +297,23 @@ For example:
 
 That's why multiple Linux distributions exist, even though they all share the same Linux Kernel.
 
+---
 
+# Q6. Difference Between Linux Kernel and Linux Distribution
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+The **Linux Kernel** is the core component of the operating system. Its job is to communicate with the hardware and manage system resources like the CPU, memory, storage, and devices.
+
+A **Linux Distribution** is a complete operating system built using the Linux Kernel. Along with the Kernel, it includes system utilities, package managers, libraries, and other software that make Linux ready to use.
+
+For example, **Ubuntu** is a Linux Distribution. It uses the Linux Kernel internally but also provides tools like the `apt` package manager. In simple words, **the Kernel is the heart of Linux, while a Distribution is the complete operating system that we install and use.**
+
+---
 
