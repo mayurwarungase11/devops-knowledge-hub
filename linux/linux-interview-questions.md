@@ -992,3 +992,23 @@ These permissions help protect files from unauthorized access and ensure system 
 **In simple words, file permissions control who can access a file and what actions they can perform on it.**
 
 ---
+
+# Q28. Explain Read, Write, and Execute Permissions
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+In Linux, every file and directory can have **three types of permissions**: **Read (r), Write (w), and Execute (x)**.
+
+- **Read (r)** means you can open and view the contents of a file. For a directory, it allows you to see what's inside it.
+- **Write (w)** means you can modify or delete a file. For a directory, it lets you create, rename, or delete files inside it.
+- **Execute (x)** means you can run a file as a program or script. For a directory, it allows you to enter that directory using commands like `cd`.
+
+**In simple words, these three permissions decide what actions a user can perform on a file or directory.**
+
+---
