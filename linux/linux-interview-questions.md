@@ -802,3 +802,23 @@ df -i
 Understanding inodes helps troubleshoot storage issues, log management problems, and filesystems with a large number of small files.
 
 ---
+
+# Q22. What happens when you delete a file in Linux?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐☆
+
+---
+
+## 🎤 Interview Answer
+
+When a file is deleted in Linux, the file name is removed from the directory, and the link to its inode is deleted.
+
+If no other hard links exist, the inode and the file's data blocks are marked as free and can be reused by the file system.
+
+However, if another hard link points to the same inode, the file remains accessible until the last hard link is removed.
+
+**In simple words, deleting a file removes its directory entry first, and the actual data is deleted only when no hard links reference its inode.**
+
+---
