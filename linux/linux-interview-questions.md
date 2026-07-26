@@ -896,3 +896,39 @@ Most of the time, this error occurs because of an incorrect path or because the 
 This question tests your understanding of file paths and basic troubleshooting.
 
 ---
+
+# Q25. Scenario-Based Question – Application Can't Read a File
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+**Concepts Covered:** File System, Inodes, Permissions
+
+---
+
+## 👨‍💼 Interviewer
+
+An application reports that it cannot read a file even though the file exists.
+
+How would you troubleshoot this?
+
+---
+
+## 👨‍💻 Candidate
+
+First, I'd verify that the file actually exists.
+
+Then I'd check the file permissions and ownership to ensure the application has access.
+
+If permissions are correct, I'd investigate whether the file system is mounted properly or if there's any storage-related issue.
+
+I'd troubleshoot step by step instead of assuming the problem is with the application.
+
+---
+
+💡 **Why the interviewer asked this?**
+
+The interviewer wants to see whether you follow a logical troubleshooting process instead of jumping to conclusions.
+
+---
