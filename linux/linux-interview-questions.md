@@ -1012,3 +1012,37 @@ In Linux, every file and directory can have **three types of permissions**: **Re
 **In simple words, these three permissions decide what actions a user can perform on a file or directory.**
 
 ---
+
+# Q29. What is chmod?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+**`chmod`** stands for **Change Mode**. It's a Linux command used to **change the permissions** of a file or directory.
+
+Whenever we want to give or remove **read, write, or execute** permissions for a user, group, or others, we use the `chmod` command.
+
+**In simple words, if I want to control who can access a file and what they can do with it, `chmod` is the command I use.**
+
+---
+
+### 💡 Interview Tip
+
+**👨‍💼 Interviewer:**
+
+> **When do you use `chmod` in real projects?**
+
+**👨‍💻 Candidate:**
+
+> A common example is when I deploy a shell script and it doesn't have execute permission. In that case, I use `chmod` to make the script executable before running it.
+
+```bash
+chmod +x deploy.sh
+```
+
+---
