@@ -966,3 +966,9 @@ I'd verify this using the appropriate command and then identify directories cont
 This is a classic Linux interview question that tests whether you understand the difference between **disk space** and **inode usage**.
 
 ---
+
+# 🔐 Section 3: File Permissions & Ownership
+
+Understand how Linux controls access to files and directories. This section covers permissions, ownership, chmod, chown, umask, and SUID/SGID/Sticky Bit from an interview perspective.
+
+---
