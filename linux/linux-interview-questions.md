@@ -932,3 +932,37 @@ I'd troubleshoot step by step instead of assuming the problem is with the applic
 The interviewer wants to see whether you follow a logical troubleshooting process instead of jumping to conclusions.
 
 ---
+
+# Q26. Scenario-Based Question – Disk Has Free Space but Can't Create New Files
+
+**Difficulty:** 🔴 Advanced
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+**Concepts Covered:** Inodes, File System
+
+---
+
+## 👨‍💼 Interviewer
+
+A Linux server still has 20 GB of free disk space, but users cannot create new files.
+
+What could be the reason?
+
+---
+
+## 👨‍💻 Candidate
+
+One possible reason is that the file system has run out of inodes.
+
+Even if disk space is available, Linux cannot create new files when all inodes are exhausted.
+
+I'd verify this using the appropriate command and then identify directories containing a large number of small files before cleaning them up safely.
+
+---
+
+💡 **Why the interviewer asked this?**
+
+This is a classic Linux interview question that tests whether you understand the difference between **disk space** and **inode usage**.
+
+---
