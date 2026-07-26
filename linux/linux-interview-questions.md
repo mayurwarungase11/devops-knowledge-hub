@@ -743,3 +743,36 @@ ln -s file1.txt softlink.txt
 ```
 
 ---
+
+# Q21. What are Inodes?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+An **inode** is a data structure that stores the metadata of a file, but **not the file's actual content**.
+
+It contains information such as the file's owner, permissions, size, timestamps, and the location of the file on the disk.
+
+Every file in Linux has a unique inode number. File names are stored separately and are linked to their respective inode.
+
+**In simple words, an inode stores information *about* a file, while the actual file data is stored elsewhere on the disk.**
+
+### Check the inode number
+
+```bash
+ls -i
+```
+
+Example Output:
+
+```bash
+12345 notes.txt
+67890 report.pdf
+```
+
+---
