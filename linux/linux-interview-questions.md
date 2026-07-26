@@ -858,3 +858,41 @@ The first priority is to restore the service safely while minimizing downtime.
 This question checks whether you think like a production engineer instead of trying risky commands on a live server.
 
 ---
+
+# Q24. Scenario-Based Question – "No Such File or Directory"
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+**Concepts Covered:** Absolute Path, Relative Path, Current Working Directory
+
+---
+
+## 👨‍💼 Interviewer
+
+You run a command, but Linux returns:
+
+```bash
+No such file or directory
+```
+
+What would you check first?
+
+---
+
+## 👨‍💻 Candidate
+
+First, I'd verify whether I'm in the correct current working directory using `pwd`.
+
+Then I'd check whether the file or directory actually exists and confirm that I'm using the correct absolute or relative path.
+
+Most of the time, this error occurs because of an incorrect path or because the file doesn't exist.
+
+---
+
+💡 **Why the interviewer asked this?**
+
+This question tests your understanding of file paths and basic troubleshooting.
+
+---
