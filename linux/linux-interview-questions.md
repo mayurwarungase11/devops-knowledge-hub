@@ -677,3 +677,27 @@ projects/app
 ```
 
 ---
+
+# Q19. What is the Current Working Directory?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+The **Current Working Directory (CWD)** is the directory in which you are currently working.
+
+Whenever you execute commands like `ls`, `touch`, or `mkdir` without specifying a path, they are performed in the current working directory.
+
+You can check your current working directory using the `pwd` command.
+
+```bash
+pwd
+```
+
+**In simple words, the Current Working Directory is your present location in the Linux file system.**
+
+---
