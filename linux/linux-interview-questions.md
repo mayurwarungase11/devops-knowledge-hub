@@ -754,13 +754,13 @@ ln -s file1.txt softlink.txt
 
 ## 🎤 Interview Answer
 
-An **inode** is a data structure that stores the metadata of a file, but **not the file's actual content**.
+An **inode** is a data structure that stores the **metadata** of a file, but **not the actual file content**.
 
-It contains information such as the file's owner, permissions, size, timestamps, and the location of the file on the disk.
+It stores information such as the file's owner, permissions, size, timestamps, and the location of the file's data on the disk.
 
-Every file in Linux has a unique inode number. File names are stored separately and are linked to their respective inode.
+Every file in Linux has its own inode number, while the file name is stored separately in the directory entry.
 
-**In simple words, an inode stores information *about* a file, while the actual file data is stored elsewhere on the disk.**
+**In simple words, an inode stores information *about* a file, not the file itself.**
 
 ### Check the inode number
 
@@ -771,8 +771,34 @@ ls -i
 Example Output:
 
 ```bash
-12345 notes.txt
-67890 report.pdf
+12856 notes.txt
+24571 report.pdf
 ```
+
+---
+
+### 💡 Interview Tip
+
+**👨‍💼 Interviewer:**
+
+> **Does an inode store the file name?**
+
+**👨‍💻 Candidate:**
+
+> **No.** The inode stores the file's metadata, while the file name is stored in the directory entry that points to the inode.
+
+---
+
+### 🚀 Why should a DevOps Engineer know about Inodes?
+
+Inodes are often involved in production issues. For example, a server may show **"No space left on device"** even though disk space is still available because the filesystem has **run out of inodes**.
+
+To check inode usage, use:
+
+```bash
+df -i
+```
+
+Understanding inodes helps troubleshoot storage issues, log management problems, and filesystems with a large number of small files.
 
 ---
