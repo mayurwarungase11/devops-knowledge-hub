@@ -600,3 +600,34 @@ As a DevOps Engineer, it's not necessary to memorize every directory, but you sh
 **In simple words, the Linux Directory Structure provides a standard way to organize files, making Linux systems easier to manage and maintain.**
 
 ---
+
+# Q17. What is the Root (/) Directory?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+The **Root (`/`) directory** is the top-most directory in the Linux file system. Every file and directory in Linux starts from this single root directory.
+
+Unlike Windows, which uses multiple drive letters like `C:\` and `D:\`, Linux has a single directory hierarchy that begins with `/`.
+
+For example:
+
+```bash
+/home/mayur
+/etc/nginx
+/var/log
+/usr/bin
+```
+
+All these paths start from the Root directory.
+
+As a DevOps Engineer, you'll frequently work with directories like `/etc` for configuration files, `/var/log` for logs, and `/home` for user data, all of which are located under the Root directory.
+
+**In simple words, the Root (`/`) directory is the starting point of the entire Linux file system. Every file and directory ultimately exists under it.**
+
+---
