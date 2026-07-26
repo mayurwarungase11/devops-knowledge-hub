@@ -701,3 +701,45 @@ pwd
 **In simple words, the Current Working Directory is your present location in the Linux file system.**
 
 ---
+
+# Q20. Difference Between Soft Link and Hard Link
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A **Hard Link** is another name for the same file. Both the original file and the hard link point to the same inode, so deleting one doesn't affect the other.
+
+A **Soft Link (Symbolic Link)** is a shortcut that points to the original file's path. If the original file is deleted, the soft link becomes broken.
+
+**In simple words, a Hard Link shares the same file, while a Soft Link only stores the path to the original file.**
+
+### Hard Link vs Soft Link
+
+| Hard Link | Soft Link |
+|------------|-----------|
+| Points to the same inode | Points to the file path |
+| Shares the same data | Acts like a shortcut |
+| Works only within the same filesystem | Can link across different filesystems |
+| Cannot link to directories (generally) | Can link to files and directories |
+| Still works if the original file is deleted | Breaks if the original file is deleted |
+
+### Commands
+
+Create a Hard Link:
+
+```bash
+ln file1.txt hardlink.txt
+```
+
+Create a Soft Link:
+
+```bash
+ln -s file1.txt softlink.txt
+```
+
+---
