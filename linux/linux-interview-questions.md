@@ -631,3 +631,49 @@ As a DevOps Engineer, you'll frequently work with directories like `/etc` for co
 **In simple words, the Root (`/`) directory is the starting point of the entire Linux file system. Every file and directory ultimately exists under it.**
 
 ---
+
+# Q18. Difference Between Absolute Path and Relative Path
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+An **Absolute Path** is the complete path to a file or directory, starting from the **Root (`/`)** directory.
+
+A **Relative Path** starts from the **current working directory** instead of the Root directory.
+
+In simple words, an **Absolute Path always starts with `/`**, whereas a **Relative Path depends on your current location.**
+
+### Absolute Path vs Relative Path
+
+| Absolute Path | Relative Path |
+|---------------|---------------|
+| Starts from the Root (`/`) directory | Starts from the current working directory |
+| Always begins with `/` | Does not begin with `/` |
+| Same regardless of your current location | Changes based on your current location |
+
+### Example
+
+Suppose your current directory is:
+
+```bash
+/home/mayur
+```
+
+Absolute Path:
+
+```bash
+/home/mayur/projects/app
+```
+
+Relative Path:
+
+```bash
+projects/app
+```
+
+---
