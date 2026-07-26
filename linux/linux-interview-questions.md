@@ -972,3 +972,23 @@ This is a classic Linux interview question that tests whether you understand the
 Understand how Linux controls access to files and directories. This section covers permissions, ownership, chmod, chown, umask, and SUID/SGID/Sticky Bit from an interview perspective.
 
 ---
+
+# Q27. What are File Permissions in Linux?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+File permissions in Linux determine **who can read, write, or execute** a file or directory.
+
+Permissions are assigned to **three categories**: the **Owner**, the **Group**, and **Others**.
+
+These permissions help protect files from unauthorized access and ensure system security.
+
+**In simple words, file permissions control who can access a file and what actions they can perform on it.**
+
+---
