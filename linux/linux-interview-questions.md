@@ -1046,3 +1046,31 @@ chmod +x deploy.sh
 ```
 
 ---
+
+# Q30. Difference Between Symbolic Mode and Numeric Mode in `chmod`
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+In Linux, we can change file permissions using **two methods**: **Symbolic Mode** and **Numeric Mode**.
+
+**Symbolic Mode** uses letters like **u (user), g (group), o (others), and a (all)** to add or remove permissions. It's useful when you want to make a specific change without affecting the other permissions.
+
+**Numeric Mode** uses numbers like **755** or **644**. Each number represents a combination of **read, write, and execute** permissions, making it a quick way to set permissions in one command.
+
+**In simple words, Symbolic Mode is used to modify permissions, while Numeric Mode is used to assign a complete permission set.**
+
+### Symbolic Mode vs Numeric Mode
+
+| Symbolic Mode | Numeric Mode |
+|---------------|--------------|
+| Uses letters like `u`, `g`, `o`, `a` | Uses numbers like `755` or `644` |
+| Best for adding or removing specific permissions | Best for setting all permissions at once |
+| Example: `chmod +x file.sh` | Example: `chmod 755 file.sh` |
+
+---
