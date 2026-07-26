@@ -973,7 +973,7 @@ Understand how Linux controls access to files and directories. This section cove
 
 ---
 
-# Q27. What are File Permissions in Linux?
+Q27. What are File Permissions in Linux?
 
 **Difficulty:** 🟢 Beginner
 
