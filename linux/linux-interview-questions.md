@@ -822,3 +822,39 @@ However, if another hard link points to the same inode, the file remains accessi
 **In simple words, deleting a file removes its directory entry first, and the actual data is deleted only when no hard links reference its inode.**
 
 ---
+
+# Q23. Scenario-Based Question – Accidentally Deleted a Configuration File
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+**Concepts Covered:** File System, Absolute Path, Relative Path
+
+---
+
+## 👨‍💼 Interviewer
+
+Suppose you're connected to a production Linux server and accidentally delete an important configuration file.
+
+What would you do first?
+
+---
+
+## 👨‍💻 Candidate
+
+First, I would avoid making unnecessary changes to the server because the deleted data might still be recoverable.
+
+Then I'd check whether a backup or version control is available. If the configuration is managed using Git or a configuration management tool like Ansible, I'd restore it from there.
+
+If no backup exists, I'd follow the organization's recovery procedure instead of trying random commands directly on the production server.
+
+The first priority is to restore the service safely while minimizing downtime.
+
+---
+
+💡 **Why the interviewer asked this?**
+
+This question checks whether you think like a production engineer instead of trying risky commands on a live server.
+
+---
