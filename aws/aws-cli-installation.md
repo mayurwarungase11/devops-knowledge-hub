@@ -1,6 +1,6 @@
 # Aws Cli Installation
 
-Update Packages
+Update Package
 
 
 ```bash
