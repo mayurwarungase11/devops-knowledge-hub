@@ -1423,3 +1423,36 @@ This improves security because users get elevated privileges only for the comman
 **In simple words, `sudo` lets you perform administrator tasks without logging in as the root user.**
 
 ---
+
+# Q44. Difference Between `su` and `sudo`
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+Both **`su`** and **`sudo`** are used to perform administrative tasks, but they work differently.
+
+**`su`** switches you to another user account, usually the root user, and gives you that user's environment until you exit.
+
+**`sudo`** allows you to run a single command with administrative privileges while staying logged in as your current user.
+
+In production, **`sudo`** is preferred because it's more secure and provides better accountability by allowing administrators to control who can run specific commands.
+
+**In simple words, `su` changes your user account, while `sudo` gives temporary administrator privileges for a command.**
+
+---
+
+## 📊 Comparison Table
+
+| `su` | `sudo` |
+|------|---------|
+| Switches to another user | Runs a command as another user (usually root) |
+| Requires the target user's password | Usually requires your own password |
+| Opens a new shell | Executes only the requested command |
+| Less preferred for daily administration | Preferred for secure system administration |
+
+---
