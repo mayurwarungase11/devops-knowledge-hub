@@ -1108,3 +1108,51 @@ chown nginx:nginx app.log
 ```
 
 ---
+
+# Q32. Difference Between `chmod` and `chown`
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+`chmod` and `chown` are both used to manage files in Linux, but they solve different problems.
+
+**`chmod`** is used to **change the permissions** of a file or directory, whereas **`chown`** is used to **change its ownership**.
+
+Think of it this way: if a file is a house, **`chown`** decides **who owns the house**, while **`chmod`** decides **who is allowed to enter or make changes to it**.
+
+**In simple words, `chmod` controls access, whereas `chown` controls ownership.**
+
+### `chmod` vs `chown`
+
+| `chmod` | `chown` |
+|---------|---------|
+| Changes file permissions | Changes file ownership |
+| Controls read, write, and execute permissions | Changes the owner and group |
+| Works with permission values like `755` or `644` | Works with usernames and groups |
+| Example: `chmod 755 app.sh` | Example: `chown nginx:nginx app.sh` |
+
+---
+
+### 💡 Interview Tip
+
+**👨‍💼 Interviewer:**
+
+> You've deployed an application, but it still can't access its log file. Would you use `chmod` or `chown`?
+
+**👨‍💻 Candidate:**
+
+> I wouldn't decide immediately. The first thing I'd do is check **who owns the log file** and **what permissions it has**.
+>
+> If the application is running as the **nginx** user but the file is owned by another user, I'd use **`chown`** to fix the ownership.
+>
+> If the ownership is already correct but the application doesn't have the required permissions, I'd use **`chmod`**.
+>
+> So, instead of guessing, I'd first identify whether it's an **ownership issue** or a **permission issue**.
+
+---
+
