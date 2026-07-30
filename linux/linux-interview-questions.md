@@ -1194,3 +1194,34 @@ Whenever a new file or directory is created, Linux starts with default permissio
 
 ---
 
+# Q35. Scenario-Based Question – Permission Denied While Running a Script
+
+**Difficulty:** 🟢 Easy
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 👨‍💼 Interviewer
+
+You've deployed a shell script named `deploy.sh`. When you try to run it, Linux returns:
+
+```bash
+Permission denied
+```
+
+How would you troubleshoot this?
+
+---
+
+## 👨‍💻 Candidate
+
+The first thing I'd check is whether the script has **execute permission**.
+
+If it doesn't, I'd grant execute permission using `chmod` and try running it again.
+
+If the issue still exists, I'd verify the file ownership and make sure the user has permission to execute the script.
+
+I always troubleshoot step by step instead of changing permissions blindly.
+
+---
