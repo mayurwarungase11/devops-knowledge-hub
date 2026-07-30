@@ -1174,3 +1174,23 @@ Whenever a new file or directory is created, Linux starts with default permissio
 
 ---
 
+# Q34. What are SUID, SGID, and Sticky Bit?
+
+**Difficulty:** 🔴 Advanced
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+**SUID, SGID, and Sticky Bit** are special permissions in Linux that provide additional access control beyond the standard **read, write, and execute** permissions.
+
+- **SUID (Set User ID)** allows a user to execute a file with the permissions of the file's owner.
+- **SGID (Set Group ID)** allows a file to run with the permissions of its group. On directories, it ensures that newly created files inherit the directory's group.
+- **Sticky Bit** is mainly used on directories. It allows users to create files in a shared directory, but they can delete only the files they own.
+
+**In simple words, SUID works with the owner, SGID works with the group, and Sticky Bit protects files in shared directories.**
+
+---
+
