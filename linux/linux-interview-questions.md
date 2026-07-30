@@ -1383,3 +1383,23 @@ For example, if five developers need access to the same project directory, inste
 | Used for login and running processes | Used to simplify permission management |
 
 ---
+
+# Q42. What is the Root User?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+The **root user** is the highest privileged user in Linux. It has unrestricted access to the entire system and can perform almost any administrative task.
+
+The root user can install software, create or delete users, modify system files, change permissions, and even shut down the system.
+
+Because it has complete control, we should avoid using the root account for daily work. Instead, we use `sudo` to perform administrative tasks only when needed.
+
+**In simple words, the root user is the administrator of the Linux system with full access to everything.**
+
+---
