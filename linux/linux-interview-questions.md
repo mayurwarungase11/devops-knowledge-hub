@@ -1282,3 +1282,29 @@ I'd first identify why the application wasn't working, then assign the correct o
 In production, I always follow the **principle of least privilege**, giving only the minimum permissions needed.
 
 ---
+
+# Q38. Scenario-Based Question – Shared Directory for Multiple Users
+
+**Difficulty:** 🔴 Production
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 👨‍💼 Interviewer
+
+Multiple developers use the same shared directory. Everyone should be able to create files, but no one should be able to delete another user's files.
+
+How would you solve this?
+
+---
+
+## 👨‍💻 Candidate
+
+I'd use the **Sticky Bit** on the shared directory.
+
+This allows all users to create files, but each user can delete only the files they own.
+
+It's a common approach for shared directories in Linux because it prevents users from accidentally or intentionally deleting someone else's files.
+
+---
