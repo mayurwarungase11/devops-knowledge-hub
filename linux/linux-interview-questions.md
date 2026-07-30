@@ -1334,3 +1334,21 @@ Linux uses user accounts to keep the system secure and to make sure each person 
 **In simple words, a user is an identity that Linux uses to identify who is accessing the system and what they're allowed to do.**
 
 ---
+
+# Q40. What is a Group in Linux?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A **group** in Linux is a collection of users who share the same permissions to files and directories.
+
+Instead of assigning permissions to each user individually, we can add users to a group and manage their access together. This makes user management much easier, especially on servers with multiple users.
+
+**In simple words, a group helps us manage permissions for multiple users at once.**
+
+---
