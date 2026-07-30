@@ -1308,3 +1308,9 @@ This allows all users to create files, but each user can delete only the files t
 It's a common approach for shared directories in Linux because it prevents users from accidentally or intentionally deleting someone else's files.
 
 ---
+
+# 👥 Section 4: User & Group Management
+
+Learn how Linux manages users and groups. This section covers user accounts, groups, sudo access, password management, and user administration from an interview perspective.
+
+---
