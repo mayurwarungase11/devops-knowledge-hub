@@ -1225,3 +1225,32 @@ If the issue still exists, I'd verify the file ownership and make sure the user 
 I always troubleshoot step by step instead of changing permissions blindly.
 
 ---
+
+# Q36. Scenario-Based Question – Application Can't Write to a Log File
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 👨‍💼 Interviewer
+
+An application is running successfully, but it fails to write to its log file.
+
+How would you troubleshoot the issue?
+
+---
+
+## 👨‍💻 Candidate
+
+First, I'd check who owns the log file and what permissions it has.
+
+If the application is running as a different user, I'd verify whether it has write permission.
+
+If the ownership is incorrect, I'd use `chown`. If the permissions are missing, I'd use `chmod`.
+
+I wouldn't assume the problem immediately—I'd first identify whether it's an ownership issue or a permission issue.
+
+
+---
