@@ -1156,3 +1156,21 @@ Think of it this way: if a file is a house, **`chown`** decides **who owns the h
 
 ---
 
+# Q33. What is `umask`?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+**`umask`** stands for **User File Creation Mask**. It's used to define the **default permissions** for newly created files and directories.
+
+Whenever a new file or directory is created, Linux starts with default permissions and then removes certain permissions based on the `umask` value.
+
+**In simple words, `umask` decides which permissions should NOT be given by default to new files and directories.**
+
+---
+
