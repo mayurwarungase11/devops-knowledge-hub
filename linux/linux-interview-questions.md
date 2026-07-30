@@ -1254,3 +1254,31 @@ I wouldn't assume the problem immediately—I'd first identify whether it's an o
 
 
 ---
+
+# Q37. Scenario-Based Question – A Developer Changed Permissions to 777
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐☆
+
+---
+
+## 👨‍💼 Interviewer
+
+A developer says,
+
+*"The application wasn't working, so I gave the project directory `777` permissions."*
+
+What would you do?
+
+---
+
+## 👨‍💻 Candidate
+
+I wouldn't keep `777` permissions because they allow anyone to read, write, and execute, which is a security risk.
+
+I'd first identify why the application wasn't working, then assign the correct ownership and only the permissions that are actually required.
+
+In production, I always follow the **principle of least privilege**, giving only the minimum permissions needed.
+
+---
