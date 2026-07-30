@@ -1152,7 +1152,7 @@ Think of it this way: if a file is a house, **`chown`** decides **who owns the h
 >
 > If the ownership is already correct but the application doesn't have the required permissions, I'd use **`chmod`**.
 >
-> So, instead of guessing, I'd first identify whether it's an **ownership issue** or a **permission issue**.
+> So, instead of guessing, I'd first identif whether it's an **ownership issue** or a **permission issue**.
 
 ---
 
