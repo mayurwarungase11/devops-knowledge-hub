@@ -1314,3 +1314,23 @@ It's a common approach for shared directories in Linux because it prevents users
 Learn how Linux manages users and groups. This section covers user accounts, groups, sudo access, password management, and user administration from an interview perspective.
 
 ---
+
+# Q39. What is a User in Linux?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A **user** in Linux is an account that allows someone to log in and use the system.
+
+Every user has their own username, password, home directory, and permissions that determine what they can access.
+
+Linux uses user accounts to keep the system secure and to make sure each person has the right level of access.
+
+**In simple words, a user is an identity that Linux uses to identify who is accessing the system and what they're allowed to do.**
+
+---
