@@ -1074,3 +1074,37 @@ In Linux, we can change file permissions using **two methods**: **Symbolic Mode*
 | Example: `chmod +x file.sh` | Example: `chmod 755 file.sh` |
 
 ---
+
+# Q31. What is `chown`?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+**`chown`** stands for **Change Owner**. It's a Linux command used to **change the ownership** of a file or directory.
+
+Whenever I want to transfer a file from one user to another, or assign it to a different group, I use the `chown` command.
+
+**In simple words, `chmod` changes permissions, whereas `chown` changes ownership.**
+
+---
+
+### 💡 Interview Tip
+
+**👨‍💼 Interviewer:**
+
+> **When would you use `chown` in a real project?**
+
+**👨‍💻 Candidate:**
+
+> A common example is after deploying an application. If the application runs as the **nginx** or **tomcat** user but the files are owned by another user, I'd use `chown` to assign the correct ownership so the application can access those files.
+
+```bash
+chown nginx:nginx app.log
+```
+
+---
