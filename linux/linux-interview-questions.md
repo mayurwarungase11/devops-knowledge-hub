@@ -1352,3 +1352,34 @@ Instead of assigning permissions to each user individually, we can add users to 
 **In simple words, a group helps us manage permissions for multiple users at once.**
 
 ---
+
+# Q41. Difference Between User and Group
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A **user** is an individual account that logs in and uses the Linux system.
+
+A **group** is a collection of users who share the same permissions and access.
+
+For example, if five developers need access to the same project directory, instead of giving permissions to each user separately, we can add all of them to a single group and assign permissions to that group.
+
+**In simple words, a user represents one person, while a group helps manage permissions for multiple users together.**
+
+---
+
+## 📊 Comparison Table
+
+| User | Group |
+|------|-------|
+| Individual account | Collection of users |
+| Has its own username and home directory | Used to manage permissions for multiple users |
+| Represents a single identity | Represents multiple users with shared access |
+| Used for login and running processes | Used to simplify permission management |
+
+---
