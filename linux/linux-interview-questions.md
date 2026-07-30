@@ -1456,3 +1456,28 @@ In production, **`sudo`** is preferred because it's more secure and provides bet
 | Less preferred for daily administration | Preferred for secure system administration |
 
 ---
+
+# Q45. Common User Management Commands
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+Linux provides several commands to create, modify, and manage user accounts. Some of the most commonly used commands are:
+
+| Command | Purpose |
+|---------|---------|
+| `useradd` | Creates a new user |
+| `usermod` | Modifies an existing user |
+| `userdel` | Deletes a user |
+| `passwd` | Sets or changes a user's password |
+| `id` | Displays a user's UID, GID, and group information |
+| `whoami` | Shows the currently logged-in user |
+
+These commands are used regularly by Linux and DevOps engineers while managing servers and user accounts.
+
+---
