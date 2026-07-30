@@ -1403,3 +1403,23 @@ Because it has complete control, we should avoid using the root account for dail
 **In simple words, the root user is the administrator of the Linux system with full access to everything.**
 
 ---
+
+# Q43. What is `sudo`?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+**`sudo`** stands for **Superuser Do**. It allows a regular user to execute administrative commands without logging in as the root user.
+
+Instead of using the root account for everyday tasks, Linux allows authorized users to temporarily perform administrative operations using `sudo`.
+
+This improves security because users get elevated privileges only for the commands that require them.
+
+**In simple words, `sudo` lets you perform administrator tasks without logging in as the root user.**
+
+---
