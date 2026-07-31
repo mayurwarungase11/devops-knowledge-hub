@@ -1,4 +1,4 @@
-# Git Installation on Ubuntu
+# Git Installation on Ubunt
 
 # Update package
 
