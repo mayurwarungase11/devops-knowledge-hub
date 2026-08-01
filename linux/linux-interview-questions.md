@@ -1761,3 +1761,23 @@ A **Background Process** runs independently in the background, allowing you to c
 | Commonly used for interactive tasks | Commonly used for long-running tasks and services |
 
 ---
+
+# Q56. What is a Daemon Process?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A **Daemon Process** is a process that runs in the background and doesn't require direct interaction from the user.
+
+It's usually started when the system boots and continues running until it's stopped or the system shuts down.
+
+Most system services, such as **Nginx**, **Docker**, **SSH**, and **Cron**, run as daemon processes because they need to be available all the time.
+
+**In simple words, a daemon is a background process that keeps providing a service without waiting for user input.**
+
+---
