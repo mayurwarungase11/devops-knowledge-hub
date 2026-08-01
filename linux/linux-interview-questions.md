@@ -1588,3 +1588,29 @@ Instead, I'd grant the required `sudo` privileges based on the organization's po
 This is more secure, provides better accountability, and limits administrative access to only the required tasks.
 
 ---
+
+# Q50. Scenario-Based Question – Working Directly as Root
+
+**Difficulty:** 🔴 Production
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 👨‍💼 Interviewer
+
+You notice that a team member always logs in directly as the **root** user to perform administrative tasks.
+
+What would you do?
+
+---
+
+## 👨‍💻 Candidate
+
+I'd explain that logging in directly as the root user isn't a good practice because it gives unrestricted access to the entire system.
+
+Instead, I'd recommend using a normal user account with `sudo` privileges. This is more secure, provides better auditing, and reduces the risk of accidental changes on a production server.
+
+Using the root account should be limited to situations where it's absolutely necessary.
+
+---
