@@ -1821,3 +1821,32 @@ This ensures that the orphan process continues running normally and is cleaned u
 **In simple words, an orphan process is a running process whose parent has exited.**
 
 ---
+
+# Q59. Difference Between Zombie Process and Orphan Process
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+Both **Zombie** and **Orphan** processes are related to parent-child processes, but they're completely different.
+
+A **Zombie Process** has already finished its execution, but its parent hasn't collected its exit status yet.
+
+An **Orphan Process** is still running, but its parent process has already terminated. In this case, Linux automatically assigns it to the **init** process (or **systemd** in modern Linux systems).
+
+**In simple words, a Zombie process is dead but not cleaned up, whereas an Orphan process is alive but has lost its parent.**
+
+### 📊 Zombie Process vs Orphan Process
+
+| Zombie Process | Orphan Process |
+|----------------|----------------|
+| Process has finished execution | Process is still running |
+| Parent process is still alive | Parent process has terminated |
+| Waits for the parent to collect its exit status | Adopted by `init` or `systemd` |
+| Occupies an entry in the process table | Continues running normally |
+
+---
