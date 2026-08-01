@@ -1620,3 +1620,23 @@ Using the root account should be limited to situations where it's absolutely nec
 Learn how Linux manages processes, monitors running applications, and handles process execution. This section covers process lifecycle, monitoring, signals, scheduling, and troubleshooting from an interview perspective.
 
 ---
+
+# Q51. What is a Process?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A **process** is simply a **program that is currently running**.
+
+Whenever you open an application or execute a command, Linux creates a process and allocates the resources it needs, such as CPU time and memory.
+
+Each process has its own **Process ID (PID)**, which Linux uses to identify and manage it.
+
+**In simple words, a process is a running instance of a program.**
+
+---
