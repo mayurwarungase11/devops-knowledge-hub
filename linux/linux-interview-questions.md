@@ -1481,3 +1481,28 @@ Linux provides several commands to create, modify, and manage user accounts. Som
 These commands are used regularly by Linux and DevOps engineers while managing servers and user accounts.
 
 ---
+
+# Q46. Common Group Management Commands
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐☆
+
+---
+
+## 🎤 Interview Answer
+
+Just like users, Linux also provides commands to create and manage groups. Some of the most commonly used commands are:
+
+| Command | Purpose |
+|---------|---------|
+| `groupadd` | Creates a new group |
+| `groupmod` | Modifies an existing group |
+| `groupdel` | Deletes a group |
+| `gpasswd` | Manages group passwords and members |
+| `groups` | Displays the groups a user belongs to |
+| `groupmems` | Adds or removes members from a group |
+
+These commands help administrators organize users into groups and manage permissions more efficiently.
+
+---
