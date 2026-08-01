@@ -1781,3 +1781,23 @@ Most system services, such as **Nginx**, **Docker**, **SSH**, and **Cron**, run 
 **In simple words, a daemon is a background process that keeps providing a service without waiting for user input.**
 
 ---
+
+# Q57. What is a Zombie Process?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A **Zombie Process** is a process that has **finished its execution**, but its entry still exists in the process table.
+
+This usually happens when the child process terminates, but the parent process hasn't collected its exit status yet.
+
+A zombie process doesn't consume CPU or memory, but it continues to occupy a Process ID (PID) until the parent process cleans it up.
+
+**In simple words, a zombie process is a dead process that still has an entry in the process table.**
+
+---
