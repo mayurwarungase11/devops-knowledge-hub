@@ -1562,3 +1562,29 @@ If everything looks correct, I'd check whether the user needs to log out and log
 I always verify each possibility one by one instead of assuming the issue is only with permissions.
 
 ---
+
+# Q49. Scenario-Based Question – Temporary Administrative Access
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 👨‍💼 Interviewer
+
+A developer needs temporary administrative access to install a package.
+
+Would you share the root password or use `sudo`?
+
+---
+
+## 👨‍💻 Candidate
+
+I would never share the root password.
+
+Instead, I'd grant the required `sudo` privileges based on the organization's policy.
+
+This is more secure, provides better accountability, and limits administrative access to only the required tasks.
+
+---
