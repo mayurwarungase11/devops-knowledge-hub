@@ -1734,3 +1734,30 @@ The most common process states are:
 **In simple words, process states show what a process is doing at a particular moment.**
 
 ---
+
+# Q55. Difference Between Foreground and Background Process
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A **Foreground Process** runs directly in the terminal and interacts with the user. While it's running, the terminal is occupied until the process finishes or is stopped.
+
+A **Background Process** runs independently in the background, allowing you to continue using the same terminal for other commands.
+
+**In simple words, a foreground process keeps the terminal busy, whereas a background process lets you continue working while it runs.**
+
+### 📊 Foreground Process vs Background Process
+
+| Foreground Process | Background Process |
+|--------------------|--------------------|
+| Runs in the current terminal | Runs in the background |
+| Interacts with the user | Usually doesn't require user interaction |
+| Occupies the terminal while running | Frees the terminal for other commands |
+| Commonly used for interactive tasks | Commonly used for long-running tasks and services |
+
+---
