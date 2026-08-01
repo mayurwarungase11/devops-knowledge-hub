@@ -1640,3 +1640,30 @@ Each process has its own **Process ID (PID)**, which Linux uses to identify and 
 **In simple words, a process is a running instance of a program.**
 
 ---
+
+# Q52. Difference Between Program and Process
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A **program** is a set of instructions stored on the disk, whereas a **process** is a program that is currently running in memory.
+
+A program is passive because it's just a file until it's executed. Once you run it, Linux creates a process and allocates resources like CPU and memory.
+
+**In simple words, a program is what you install, and a process is what runs after you open it.**
+
+### 📊 Program vs Process
+
+| Program | Process |
+|---------|---------|
+| Stored on disk | Running in memory |
+| Passive | Active |
+| Doesn't use CPU or RAM until executed | Uses CPU, memory, and other system resources |
+| Becomes a process when executed | Created when a program starts running |
+
+---
