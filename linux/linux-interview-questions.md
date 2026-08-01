@@ -1534,3 +1534,31 @@ Finally, I'd verify that the user has been added to the correct group before han
 I prefer verifying the changes instead of assuming everything worked correctly.
 
 ---
+
+# Q48. Scenario-Based Question – User Still Gets "Permission Denied"
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 👨‍💼 Interviewer
+
+A user is already a member of the correct group, but they're still getting **"Permission denied"** while accessing a directory.
+
+How would you troubleshoot this?
+
+---
+
+## 👨‍💻 Candidate
+
+First, I'd verify that the user is actually a member of the expected group.
+
+Then I'd check the ownership and permissions of the directory to make sure the group has the required access.
+
+If everything looks correct, I'd check whether the user needs to log out and log back in for the new group membership to take effect.
+
+I always verify each possibility one by one instead of assuming the issue is only with permissions.
+
+---
