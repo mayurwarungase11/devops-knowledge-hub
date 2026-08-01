@@ -1710,3 +1710,27 @@ Terminated
 ```
 
 ---
+
+# Q54. What are Process States in Linux?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+As a process runs, it doesn't stay in the same state all the time. Depending on what it's doing, Linux moves it through different process states.
+
+The most common process states are:
+
+- **New** – The process has been created but hasn't started running yet.
+- **Ready** – The process is ready to run and is waiting for CPU time.
+- **Running** – The CPU is currently executing the process.
+- **Waiting (Blocked)** – The process is waiting for an event, such as disk I/O or user input.
+- **Terminated** – The process has finished execution and releases its resources.
+
+**In simple words, process states show what a process is doing at a particular moment.**
+
+---
