@@ -1506,3 +1506,31 @@ Just like users, Linux also provides commands to create and manage groups. Some 
 These commands help administrators organize users into groups and manage permissions more efficiently.
 
 ---
+
+# Q47. Scenario-Based Question – A New Developer Joins the Team
+
+**Difficulty:** 🟢 Easy
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 👨‍💼 Interviewer
+
+A new developer has joined your team. You need to create a user account and give them access to the **developers** group.
+
+How would you do it?
+
+---
+
+## 👨‍💻 Candidate
+
+First, I'd create the user account.
+
+Then I'd add the user to the **developers** group so they inherit the required permissions.
+
+Finally, I'd verify that the user has been added to the correct group before handing over the account.
+
+I prefer verifying the changes instead of assuming everything worked correctly.
+
+---
