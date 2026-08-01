@@ -1801,3 +1801,23 @@ A zombie process doesn't consume CPU or memory, but it continues to occupy a Pro
 **In simple words, a zombie process is a dead process that still has an entry in the process table.**
 
 ---
+
+# Q58. What is an Orphan Process?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+An **Orphan Process** is a process that is **still running**, but its parent process has already terminated.
+
+When this happens, Linux automatically assigns the orphan process to the **init** process (or **systemd** in modern Linux systems), which becomes its new parent.
+
+This ensures that the orphan process continues running normally and is cleaned up properly when it finishes.
+
+**In simple words, an orphan process is a running process whose parent has exited.**
+
+---
