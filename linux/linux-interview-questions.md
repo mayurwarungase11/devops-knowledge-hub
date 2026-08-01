@@ -1667,3 +1667,46 @@ A program is passive because it's just a file until it's executed. Once you run 
 | Becomes a process when executed | Created when a program starts running |
 
 ---
+
+# Q53. Explain the Process Lifecycle
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+Every process in Linux goes through a lifecycle from the moment it's created until it finishes execution.
+
+It usually starts in the **New** state, where the process is created. Then it moves to the **Ready** state, waiting for CPU time.
+
+Once the CPU starts executing it, the process enters the **Running** state. If it needs to wait for an event, such as user input or disk I/O, it moves to the **Waiting** state. After the event is completed, it returns to the **Ready** state and continues execution.
+
+Finally, when the process completes its work, it enters the **Terminated** state and releases all the resources it was using.
+
+**In simple words, a process moves through different states until its work is completed and it exits.**
+
+### 📊 Process Lifecycle
+
+```text
+New
+ │
+ ▼
+Ready
+ │
+ ▼
+Running
+ │ \
+ │  \
+ │   ▼
+ │ Waiting
+ │   │
+ └───┘
+ │
+ ▼
+Terminated
+```
+
+---
