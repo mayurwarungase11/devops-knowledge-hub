@@ -1614,3 +1614,9 @@ Instead, I'd recommend using a normal user account with `sudo` privileges. This 
 Using the root account should be limited to situations where it's absolutely necessary.
 
 ---
+
+# ⚙️ Section 5: Process Management
+
+Learn how Linux manages processes, monitors running applications, and handles process execution. This section covers process lifecycle, monitoring, signals, scheduling, and troubleshooting from an interview perspective.
+
+---
