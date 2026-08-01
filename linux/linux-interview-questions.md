@@ -1850,3 +1850,32 @@ An **Orphan Process** is still running, but its parent process has already termi
 | Occupies an entry in the process table | Continues running normally |
 
 ---
+
+# Q60. Common Process Management Commands
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+Linux provides several commands to monitor and manage running processes. Some of the most commonly used commands are:
+
+| Command | Purpose |
+|---------|---------|
+| `ps` | Displays information about running processes |
+| `top` | Shows running processes and resource usage in real time |
+| `htop` | Interactive version of `top` with an easier interface |
+| `kill` | Terminates a process using its Process ID (PID) |
+| `killall` | Terminates all processes with the same name |
+| `pkill` | Terminates processes by matching their name or pattern |
+| `nice` | Starts a process with a specific priority |
+| `renice` | Changes the priority of a running process |
+| `jobs` | Lists background jobs in the current shell |
+| `bg` | Resumes a stopped job in the background |
+| `fg` | Brings a background job to the foreground |
+| `nohup` | Keeps a process running even after logging out |
+
+---
