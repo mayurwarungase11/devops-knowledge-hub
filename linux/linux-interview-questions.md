@@ -1899,3 +1899,31 @@ By default, `kill` sends the **SIGTERM (15)** signal, which asks the process to 
 **In simple words, `kill` is used to stop a running process by using its PID.**
 
 ---
+
+# Q62. Difference Between `kill`, `killall`, and `pkill`
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+All three commands are used to terminate processes, but they identify the process in different ways.
+
+- **`kill`** terminates a process using its **Process ID (PID)**.
+- **`killall`** terminates **all processes** with the specified process name.
+- **`pkill`** terminates processes by matching their **name or pattern**, making it more flexible than `killall`.
+
+**In simple words, `kill` works with a PID, `killall` works with an exact process name, and `pkill` works with a process name or pattern.**
+
+### 📊 Comparison Table
+
+| `kill` | `killall` | `pkill` |
+|--------|-----------|----------|
+| Uses Process ID (PID) | Uses exact process name | Uses process name or pattern |
+| Stops one specific process | Stops all matching processes | Stops one or more matching processes |
+| Best when you know the PID | Best when multiple processes have the same name | Best for flexible process matching |
+
+---
