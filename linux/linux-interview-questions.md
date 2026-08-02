@@ -1879,3 +1879,23 @@ Linux provides several commands to monitor and manage running processes. Some of
 | `nohup` | Keeps a process running even after logging out |
 
 ---
+
+# Q61. What is the `kill` Command?
+
+**Difficulty:** 🟢 Beginner
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+The **`kill`** command is used to **terminate a running process** using its **Process ID (PID)**.
+
+Whenever a process becomes unresponsive or needs to be stopped, we can use the `kill` command to send a signal to that process.
+
+By default, `kill` sends the **SIGTERM (15)** signal, which asks the process to terminate gracefully.
+
+**In simple words, `kill` is used to stop a running process by using its PID.**
+
+---
