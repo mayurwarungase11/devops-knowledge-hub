@@ -2068,3 +2068,29 @@ Both **`cron`** and **`at`** are used to schedule tasks in Linux, but they're de
 | Common for backups, monitoring, and maintenance | Common for one-time administrative tasks |
 
 ---
+
+# Q69. Scenario-Based Question – High CPU Usage
+
+**Difficulty:** 🟢 Easy
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 👨‍💼 Interviewer
+
+A Linux server suddenly becomes slow, and you suspect that one process is consuming too much CPU.
+
+How would you troubleshoot it?
+
+---
+
+## 👨‍💻 Candidate
+
+First, I'd identify which process is consuming the CPU using commands like **`top`** or **`htop`**.
+
+Once I identify the process, I'd check whether it's expected behavior or if the application is stuck.
+
+If needed, I'd terminate the process gracefully using **`kill`**. If it still doesn't stop, I'd use **`kill -9`** as the last option.
+
+---
