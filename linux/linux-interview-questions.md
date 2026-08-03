@@ -2021,3 +2021,21 @@ Instead of running these tasks manually every day, we can schedule them using **
 **In simple words, `cron` is used to automate repetitive tasks by running them on a schedule.**
 
 ---
+
+# Q67. What is `crontab`?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+A **`crontab`** is a file that stores the scheduled jobs to be executed by the **cron** service.
+
+Whenever we want to schedule a task, we add an entry to the crontab, and the cron service reads that file and executes the task at the specified time.
+
+**In simple words, `cron` is the service that runs scheduled jobs, while `crontab` is where those jobs are defined.**
+
+---
