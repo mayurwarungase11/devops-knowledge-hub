@@ -2094,3 +2094,27 @@ Once I identify the process, I'd check whether it's expected behavior or if the 
 If needed, I'd terminate the process gracefully using **`kill`**. If it still doesn't stop, I'd use **`kill -9`** as the last option.
 
 ---
+
+# Q70. Scenario-Based Question – SSH Session Disconnected
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 👨‍💼 Interviewer
+
+You're connected to a production server through SSH and need to run a deployment script that will take around 30 minutes. What would you do to make sure the script keeps running even if your SSH session disconnects?
+
+---
+
+## 👨‍💻 Candidate
+
+I'd use **`nohup`** to start the deployment script.
+
+This ensures the process continues running even if my SSH session disconnects or I close the terminal.
+
+For long-running tasks on remote servers, `nohup` is a simple and reliable solution.
+
+---
