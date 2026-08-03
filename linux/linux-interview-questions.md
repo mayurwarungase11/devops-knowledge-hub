@@ -2039,3 +2039,32 @@ Whenever we want to schedule a task, we add an entry to the crontab, and the cro
 **In simple words, `cron` is the service that runs scheduled jobs, while `crontab` is where those jobs are defined.**
 
 ---
+
+# Q68. Difference Between `cron` and `at`
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+Both **`cron`** and **`at`** are used to schedule tasks in Linux, but they're designed for different purposes.
+
+**`cron`** is used for **recurring tasks** that need to run at regular intervals, such as daily backups or weekly log cleanup.
+
+**`at`** is used for **one-time tasks** that need to run only once at a specific date and time.
+
+**In simple words, use `cron` for repeated tasks and `at` for one-time tasks.**
+
+### 📊 `cron` vs `at`
+
+| `cron` | `at` |
+|---------|------|
+| Runs tasks repeatedly | Runs a task only once |
+| Best for scheduled automation | Best for one-time scheduling |
+| Used for daily, weekly, or monthly jobs | Used for a specific date and time |
+| Common for backups, monitoring, and maintenance | Common for one-time administrative tasks |
+
+---
