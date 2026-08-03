@@ -1927,3 +1927,31 @@ All three commands are used to terminate processes, but they identify the proces
 | Best when you know the PID | Best when multiple processes have the same name | Best for flexible process matching |
 
 ---
+
+# Q63. What are `nice` and `renice`?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐☆
+
+---
+
+## 🎤 Interview Answer
+
+Both **`nice`** and **`renice`** are used to manage the **priority of a process** in Linux.
+
+The **`nice`** command is used when starting a new process to assign it a priority, whereas **`renice`** is used to change the priority of a process that's already running.
+
+A process with a **lower nice value** gets **higher CPU priority**, while a **higher nice value** means **lower CPU priority**.
+
+**In simple words, `nice` sets the priority of a new process, and `renice` changes the priority of an existing process.**
+
+### 📊 `nice` vs `renice`
+
+| `nice` | `renice` |
+|---------|-----------|
+| Sets the priority of a new process | Changes the priority of a running process |
+| Used before the process starts | Used after the process has started |
+| Starts a process with a specific nice value | Modifies the nice value of an existing process |
+
+---
