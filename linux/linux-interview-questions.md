@@ -1955,3 +1955,31 @@ A process with a **lower nice value** gets **higher CPU priority**, while a **hi
 | Starts a process with a specific nice value | Modifies the nice value of an existing process |
 
 ---
+
+# Q64. What are `jobs`, `bg`, and `fg`?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐☆
+
+---
+
+## 🎤 Interview Answer
+
+The **`jobs`**, **`bg`**, and **`fg`** commands are used to manage jobs in the current terminal session.
+
+- **`jobs`** displays all the jobs running in the current shell.
+- **`bg`** resumes a stopped job and continues running it in the background.
+- **`fg`** brings a background or stopped job back to the foreground so you can interact with it.
+
+**In simple words, `jobs` shows your jobs, `bg` runs a job in the background, and `fg` brings it back to the foreground.**
+
+### 📊 `jobs` vs `bg` vs `fg`
+
+| Command | Purpose |
+|---------|---------|
+| `jobs` | Lists all jobs in the current shell |
+| `bg` | Resumes a stopped job in the background |
+| `fg` | Brings a background or stopped job to the foreground |
+
+---
