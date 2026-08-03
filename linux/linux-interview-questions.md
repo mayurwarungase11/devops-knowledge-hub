@@ -2001,3 +2001,23 @@ Normally, when you close the terminal, the running process is terminated. By usi
 **In simple words, `nohup` makes sure a process keeps running even after your terminal session ends.**
 
 ---
+
+# Q66. What is `cron`?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐⭐
+
+---
+
+## 🎤 Interview Answer
+
+The **`cron`** service is used to **schedule tasks** in Linux so they run automatically at a specified time or interval.
+
+It's commonly used for tasks like backups, log cleanup, health checks, report generation, and other routine administrative jobs.
+
+Instead of running these tasks manually every day, we can schedule them using **cron**, and Linux takes care of executing them automatically.
+
+**In simple words, `cron` is used to automate repetitive tasks by running them on a schedule.**
+
+---
