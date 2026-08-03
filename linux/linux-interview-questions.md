@@ -1983,3 +1983,21 @@ The **`jobs`**, **`bg`**, and **`fg`** commands are used to manage jobs in the c
 | `fg` | Brings a background or stopped job to the foreground |
 
 ---
+
+# Q65. What is `nohup`?
+
+**Difficulty:** 🟡 Intermediate
+
+**Interview Frequency:** ⭐⭐⭐⭐☆
+
+---
+
+## 🎤 Interview Answer
+
+The **`nohup`** command is used to keep a process running **even after you log out or close the terminal**.
+
+Normally, when you close the terminal, the running process is terminated. By using `nohup`, the process continues running in the background until it finishes or is stopped manually.
+
+**In simple words, `nohup` makes sure a process keeps running even after your terminal session ends.**
+
+---
