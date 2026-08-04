@@ -1,6 +1,6 @@
 # 🐧 Linux Interview Questions
 
-Master the most frequently asked Linux interview questions with concise, interview-ready answers.
+Master the most frequently asked Linux interview questions with concise, interview-ready answers
 
 ---
 
